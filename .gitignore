@@ -1,0 +1,35 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+.env
+
+# Data
+*.csv
+*.tsv
+*.fasta
+*.fa
+*.fastq
+*.bam
+*.vcf
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+
+# OS
+.DS_Store
+Thumbs.db
+
+# LaTeX
+*.aux
+*.log
+*.out
+*.synctex.gz
+*.bbl
+*.blg
+
+# Editor
+.idea/
+.vscode/
+*.swp
