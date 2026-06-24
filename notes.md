@@ -272,10 +272,66 @@ nohup mb 3-analysis/hfq_aln_nr90_len50-150.nex > /tmp/mrbayes3.log 2>&1 &
 # PID: 2307、2026-06-24 15:10 スタート
 ```
 
+**結果（2回目、1,000,000世代）：**
+- 完了。最終 ASDSF = 0.075（目標 0.01 に未達）
+- 後半（860,000〜1,000,000世代）で 0.077 → 0.075 とほぼプラトー。単純延長では収束が困難と判断
+- **方針転換：外群（SmAP）を追加して有根化し、MrBayes を再実行**
+
+---
+
+### 2026-06-24 — SmAP 外群追加・再解析（実行中）
+
+**目的：** 無根ツリーでの収束困難を解消するため、古細菌 SmAP を外群として追加し有根ツリーで再解析する
+
+**外群選定（Veretnik 2009 古細菌データセットから系統的に分散した5件）：**
+
+| Accession | Organism | 系統 |
+|---|---|---|
+| sp\|O26745.1\|RUXX_METTH | *Methanothermobacter thermautotrophicus* | Euryarchaeota（SmAP1 参照株） |
+| NP_069198.1 | *Archaeoglobus fulgidus* DSM 4304 | Euryarchaeota |
+| AAL63028.1 | *Pyrobaculum aerophilum* str. IM2 | Crenarchaeota |
+| NP_341755.1 | *Sulfolobus solfataricus* P2 | Crenarchaeota |
+| NP_963332.1 | *Nanoarchaeum equitans* Kin4-M | Nanoarchaeota |
+
+保存先：`2-preprocessed-data/smAP_outgroup.fasta`
+
+**前処理：**
+
+```bash
+# Hfq 229件 + SmAP 5件 = 234件
+cat 2-preprocessed-data/hfq_nr90_len50-150.fasta \
+    2-preprocessed-data/smAP_outgroup.fasta \
+    > 2-preprocessed-data/hfq_nr90_len50-150_with_outgroup.fasta
+
+# MAFFT 再アラインメント（234配列、265サイト）
+mafft --auto --quiet 2-preprocessed-data/hfq_nr90_len50-150_with_outgroup.fasta \
+    > 3-analysis/hfq_aln_nr90_len50-150_with_outgroup.fasta
+```
+
+**IQ-TREE3（実行中、PID: 78402）：**
+
+```bash
+nohup iqtree3 \
+    -s 3-analysis/hfq_aln_nr90_len50-150_with_outgroup.fasta \
+    -m TEST -B 1000 -T AUTO \
+    -o "sp|O26745.1|RUXX_METTH,NP_069198.1,AAL63028.1,NP_341755.1,NP_963332.1" \
+    --prefix 4-results/hfq_tree_nr90_outgroup \
+    > /tmp/iqtree3_outgroup.log 2>&1 &
+```
+
+**MrBayes（IQ-TREE3 完了後に自動起動）：**
+
+```bash
+# /tmp/wait_and_run_mrbayes.sh (PID: 78425) が IQ-TREE3 終了を検知して自動実行
+# nohup mb 3-analysis/hfq_aln_nr90_len50-150_with_outgroup.nex >> /tmp/mrbayes_outgroup.log 2>&1
+```
+
+設定：`ngen=2000000`、サンプリング間隔 500、バーンイン 500,000世代（25%）
+
 **完了後の確認事項：**
+- SmAP 外群が単系統群を形成し有根化できているか
 - IQ-TREE3 のトポロジーとの一致度
-- IQ-TREE3 で低ブートストラップだったノードのベイズ事後確率
-- 収束診断（ASDSF < 0.01）
+- ASDSF < 0.01 の達成
 
 ---
 
