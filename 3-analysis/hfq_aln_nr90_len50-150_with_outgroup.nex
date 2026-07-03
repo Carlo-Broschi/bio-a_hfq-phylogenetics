@@ -235,7 +235,7 @@ Begin data;
     WP_482575343.1  MN-----------------------NK------GQLLQDPFLNALRREHVPVS----IYLVNGIKLQGQIESFDQYVVLL-RNT---------VTQ-MVYKHAISTIV---PGRA-------------VT-FSAGGAEE------QPPAA-------------------------------------------------------------------------------------------------------------------
     NP_069198.1  MV----------------------------------LPNQMVKSMVGKIIRVEMKG-----EENQLVGKLEGVDDYMNLY-LTNAM--EC---KGE-EKVRSLGEIVL----------RGNN---VVLIQ----------------PQEE-------------------------------------------------------------------------------------------------------------------
     AAL63028.1  MASDI--------------------SKC-FATLGATLQDSIGKQVL-----------VKLRDSHEIRGILRSFDQHVNLL-LEDAE--E----IIDGNVYKR-GTMVV----------RGEN---VLFIS----------------PVP--------------------------------------------------------------------------------------------------------------------
-    sp|O26745.1|RUXX_METTH  MIDVS--------------------SQ------RVNVQRPLDALGNSLNSPVI----IKLKGDREFRGVLKSFDLHMNLV-LNDAE--E----LEDGEVTRRLGTVLI----------RGDN---IVYIS----------------P----------------------------------------------------------------------------------------------------------------------
+    O26745_RUXX_METTH  MIDVS--------------------SQ------RVNVQRPLDALGNSLNSPVI----IKLKGDREFRGVLKSFDLHMNLV-LNDAE--E----LEDGEVTRRLGTVLI----------RGDN---IVYIS----------------P----------------------------------------------------------------------------------------------------------------------
     NP_963332.1  MRP----------------------LE-------------FLASLKGKR--VK----VYLKNGKTIEGLLESSDIHVNLY-MKEVKIDE--ENLKELFVRGDMVLFIA---PL--------------------------------------------------------------------------------------------------------------------------------------------------------
     NP_341755.1  ------------------------------------MQAKVENPLKSLRTAINRIVLVKLKDGSEYIGKLEQTDGTMNLV-LRDCT--EIREGTSE-PVAKYGRVLIR--------------GSNILFIS-VD----------YET---------------------------------------------------------VMNSEK--------------------------------------------------------
   ;
@@ -244,7 +244,8 @@ End;
 Begin mrbayes;
   set autoclose=yes;
   lset rates=gamma;
-  mcmc ngen=2000000 samplefreq=500 nchains=4 nruns=2 printfreq=10000 diagnfreq=5000;
-  sump burnin=500000;
-  sumt burnin=500000;
+  prset aamodelpr=fixed(vt);
+  mcmc ngen=4000000 samplefreq=500 nchains=4 nruns=2 printfreq=10000 diagnfreq=5000 append=yes;
+  sump burnin=1000000;
+  sumt burnin=1000000;
 End;

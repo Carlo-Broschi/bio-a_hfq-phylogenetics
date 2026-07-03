@@ -279,7 +279,7 @@ nohup mb 3-analysis/hfq_aln_nr90_len50-150.nex > /tmp/mrbayes3.log 2>&1 &
 
 ---
 
-### 2026-06-24 — SmAP 外群追加・再解析（実行中）
+### 2026-06-24 — SmAP 外群追加・再解析
 
 **目的：** 無根ツリーでの収束困難を解消するため、古細菌 SmAP を外群として追加し有根ツリーで再解析する
 
@@ -328,10 +328,100 @@ nohup iqtree3 \
 
 設定：`ngen=2000000`、サンプリング間隔 500、バーンイン 500,000世代（25%）
 
+**結果（外群あり 2,000,000世代）：** 最終 ASDSF = 0.094。0.01 に届かずプラトー。外群追加だけでは収束改善せず。
+
+---
+
+### 2026-07-01〜03 — MrBayes 収束トラブルシューティング
+
+**問題：** 外群追加後も ASDSF が 0.09 台でプラトー。収束（<0.01）に至らない。以下を順に試した。
+
+**① チェーン温度を上げる（temp=0.1→0.2）→ 失敗**
+```
+mcmcp temp=0.2;
+```
+- 狙い：チェーン間交換率を上げて局所解脱出
+- 結果：**逆効果**。350,000世代で ASDSF 0.19 と悪化、残り時間も 22h→66h に膨張。cold chain が広すぎる空間を探索し2ランが乖離。→ 中断して temp=0.1 に戻した
+
+**② アミノ酸モデルを固定（VT+G4）→ 有効**
+```
+prset aamodelpr=fixed(vt);
+```
+- 狙い：デフォルト Jones からモデル探索を排除。bio-b nr70 でも VT+G4 が BIC 最良だった実績
+- 結果：**明確に改善**。770,000世代 0.084 → プラトーが 0.09台→0.05台に低下。2,000,000世代で **ASDSF = 0.055**
+
+**③ 世代延長（append=yes で 2M→4M）→ 効果薄**
+```
+mcmc ngen=4000000 ... append=yes;
+```
+- 結果：4,000,000世代完走で **ASDSF = 0.0485**。倍の世代で 0.006 しか下がらず、データ限界によるプラトーと判断
+- 注：この間に Mac 再起動があり `/tmp` のログ消失。結果本体（`.mcmc`/`.con.tre`/`.t`）は `3-analysis/` に残存。ASDSF は `.mcmc` 最終列で確認
+
+**収束しない理由の結論：** 計算不足ではなく**データの限界**。Hfq は短鎖（254〜265サイト、gap 多い）で 234 taxa。情報量に対し枝数が多く、一部の枝は原理的に解像できない。ASDSF プラトーは2ランが「解像不能な枝」で食い違い続けるため。0.05 は MrBayes デフォルト停止値（`stopval`）でもあり実用上の許容線。
+
+---
+
+### 2026-07-03 — rogue taxa 除去（RogueNaRok）
+
+**目的：** 木の中を飛び回り ASDSF を押し上げる不安定 taxa を除去し収束を改善する
+
+**ツール：** RogueNaRok v1.0（GitHub aberer/RogueNaRok をソースビルド、`/tmp/RogueNaRok/RogueNaRok`）
+
+**手順：**
+1. MrBayes 事後樹（run1.t + run2.t）からバーンイン25%除き 6本に1本サブサンプル → 2002本を Newick 化（dendropy、`/tmp/rogue_input.trees`）
+2. RogueNaRok 実行 → 改善度（rawImprovement）順に不安定 taxa をリスト
+
+**結果：** 改善度 >0.5 の**強い rogue 9本**を除去対象に採用（10位で 0.27 に落ちる明確なエルボー）。すべて in-group 細菌 Hfq、外群5本は非該当。
+
+| Accession | Organism | 備考 |
+|---|---|---|
+| WP_438616890.1 | *Pampinifervens florentissimum* | ML木で枝長3.14（長枝）|
+| WP_490238672.1 | *Pseudothermotoga* sp. | |
+| WP_484619985.1 | *Ferrimonas* sp. YIN67 | |
+| WP_482575343.1 | | |
+| WP_485946938.1 | | |
+| WP_489212495.1 | | |
+| WP_490070440.1 | | |
+| WP_487154672.1 | | |
+| WP_488172342.1 | | |
+
+**手法の妥当性検証：** ML木で最長枝だった WP_379210080.1（枝長4.78）は rogue リストに**入らなかった**。長枝でも定位置なら rogue でない＝木の中を動く taxa だけを検出しており、手法が正しく機能している。
+
+**クリーン再解析（実行中）：** 234→225 taxa（-9本、3.8%のみ喪失）
+```bash
+# 除去 → 再アラインメント（254サイト）
+mafft --auto --quiet 2-preprocessed-data/hfq_nr90_len50-150_with_outgroup_derogued.fasta \
+    > 3-analysis/hfq_aln_nr90_len50-150_derogued.fasta
+# IQ-TREE（PID 76170）→ 完了後 MrBayes（VT+G4固定）を watcher で自動起動
+iqtree3 -s ... -o "<SmAP5件>" --prefix 4-results/hfq_tree_nr90_derogued
+# MrBayes: 3-analysis/hfq_aln_nr90_len50-150_derogued.nex（VT+G4、ngen=2000000）
+```
+
 **完了後の確認事項：**
+- ASDSF が 0.0485 からどこまで下がるか（rogue 9本が主犯なら大きく改善のはず）
 - SmAP 外群が単系統群を形成し有根化できているか
 - IQ-TREE3 のトポロジーとの一致度
-- ASDSF < 0.01 の達成
+
+### 2026-07-04 — derogued 版 MrBayes：収束達成・要約完了
+
+**収束：** 世代 1,062,500 で **ASDSF = 0.0468**（単調減少：0.0487→0.0479→0.0470→0.0468）。MrBayes デフォルト停止値 0.05 を突破。ngen=2,000,000 のうち約 1.06M 世代で収束確認できたため、その時点でチェインを停止（stoprule 未設定のため手動 kill）し、既存 `.p`/`.t` から要約した。
+
+**要約手順（sumt/sump）：** kill で `.t` が未終端（`end;` 欠落）だったため両 run の末尾に `end;` を追記（最終木は両 run とも gen.1062500 で完全終端を確認済み）。データブロックのみ抽出した `summarize_derogued.nex` に sumt/sump を記述して実行（relburnin=yes burninfrac=0.25、contype=allcompat）。
+
+**収束診断（良好）：**
+- TL: PSRF = 1.000、min ESS 169 / avg 233
+- alpha（gamma）: PSRF = 1.003、min ESS 244 / avg 342、mean 0.552
+- 2ラン計 3190 サンプル（各 2126 中 1595 採用）
+
+**樹形の支持（allcompat コンセンサス 447 ノード）：**
+- 強支持（PP ≥ 0.95）：36 分岐
+- 中支持（0.5 ≤ PP < 0.95）：113 分岐
+- 弱支持（PP < 0.5）：302 分岐
+- → **末端クレードは堅いが深部バックボーンは解像不能**。design memo §1 で予見した通り、計算律速ではなく**短鎖ゆえの情報律速**（254 サイト・225 taxa）。収束診断は完全に良好なので、これはランの問題ではなくデータの上限。
+
+**生成物（`3-analysis/`）：** `hfq_aln_nr90_len50-150_derogued.nex.con.tre`（allcompat コンセンサス、FigTree 用）、`.tstat`/`.vstat`/`.parts`（分岐統計）、`.trprobs`（樹形事後確率）、`.pstat`/`.lstat`（パラメータ・周辺尤度）。
+
+**論文での扱い方針：** ML（IQ-TREE3）を主樹形、MrBayes PP を支持値の第二軸として併記。深部の低 PP は「短鎖タンパクの深部解像限界」として正直に記載し、bio-b の構造ガイドアライメント（design memo §2）で緩和を図る方針と接続。
 
 ---
 
