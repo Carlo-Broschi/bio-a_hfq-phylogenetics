@@ -1,0 +1,27 @@
+=== bio-a: ML (IQ-TREE3) vs Bayesian (MrBayes) 比較 ===
+
+ML 葉数     : 225
+MB 葉数     : 225
+共通 taxon  : 225
+
+--- ① トポロジー一致（bipartition ベース）---
+ML 内部 split 数       : 222
+MB 内部 split 数       : 222
+共有 split             : 157
+Robinson-Foulds 距離   : 130  (= ML固有65 + MB固有65)
+正規化 RF              : 0.293
+共有スプリット率       : 70.7%  (2×共有/(ML+MB))
+
+--- ② 強支持枝の congruence（ML UFBoot≥95）---
+ML 強支持 split (UFBoot≥95): 91
+  うち MB con.tre にも存在   : 86  (94.5%)
+  一致枝の MB PP 中央値      : 0.92
+  一致枝で PP≥0.95           : 36/86
+  MB で消える強支持枝        : 5（深部の解像不能枝と推定）
+
+--- ③ 外群（SmAP 5件）単系統性・有根化 ---
+外群 taxon 検出: 5 / 5 → ['AAL63028.1', 'NP_069198.1', 'NP_341755.1', 'NP_963332.1', 'sp_O26745.1_RUXX_METTH']
+  ML: 外群が単一 bipartition を成す = YES（有根化可能）
+  MB: 外群が単一 bipartition を成す = YES（有根化可能）
+
+※ 無根木のため『外群 vs 残り』の二分が split として存在すれば、その枝に根を置いて有根化できることを意味する。

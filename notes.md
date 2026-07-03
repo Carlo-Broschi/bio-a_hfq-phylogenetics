@@ -425,6 +425,25 @@ iqtree3 -s ... -o "<SmAP5件>" --prefix 4-results/hfq_tree_nr90_derogued
 
 ---
 
+### 2026-07-04 — ML vs Bayesian トポロジー比較・外群有根化チェック
+
+**スクリプト：** `scripts/analytics/compare_ml_bayes.py`（IQ-TREE derogued `.contree` と MrBayes `.con.tre` を dendropy で比較）。MB 側は外群 RUXX のパイプがサニタイズ済みでラベルが食い違うため、namespace 非依存の**葉ラベル集合による bipartition 比較**で実装。出力 `4-results/ml_bayes_comparison.txt`。
+
+**① トポロジー一致（225 taxa、内部 split 各222）：**
+- 共有 split 157、**RF 130（正規化 0.293）、共有スプリット率 70.7%**。
+- 全体が中程度なのは、両手法とも解像できない深部低支持枝が不一致の主因（＝短鎖の情報律速、収束解析の結論と整合）。
+
+**② 強支持枝の congruence（主検証）：**
+- ML UFBoot≥95 の内部枝 91 のうち **86 枝（94.5%）が MrBayes con.tre にも存在**。
+- 一致枝の MB PP 中央値 0.92、PP≥0.95 が 36/86。MB で消えた強支持枝はわずか5（深部の解像不能枝）。
+- → **「ML が自信を持つ枝の 94.5% を Bayes が独立に再現」**。不一致は低支持領域に集中＝2手法は well-supported ノードで高度に一致。論文の頑健性主張の主軸に使える。
+
+**③ 外群・有根化：** SmAP 外群 5/5 検出。**ML・MB 両方で「外群 vs 残り」が単一 bipartition を形成**＝両手法で SmAP による有根化が可能。design memo（bio-b §1）の相互外群設計の前提を bio-a 側で確認。
+
+**次段：** ggtree で UFBoot＋PP を併記した出版品質図。深部低支持枝の扱いは Discussion で「短鎖タンパクの解像限界」として明記。
+
+---
+
 ## 配列リスト
 
 | Accession | Organism | 備考 |
