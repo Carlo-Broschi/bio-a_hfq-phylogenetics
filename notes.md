@@ -444,6 +444,23 @@ iqtree3 -s ... -o "<SmAP5件>" --prefix 4-results/hfq_tree_nr90_derogued
 
 ---
 
+### 2026-07-04 — ggtree 作図（R 4.6.0 / ggtree 4.2.0）
+
+R 環境は導入済み・動作確認済み（ggtree 4.2.0・treeio 1.36.1・ape 5.8.1）。2種の図を作成。
+
+**① 基本樹形図：** `scripts/viz/plot_hfq_tree.R` → `4-results/hfq_tree_derogued.{pdf,png}`
+- SmAP 外群で有根化（外群が basal grade に配置）、UFBoot 3ティア色分け（灰<70/橙70-94/赤≥95）、tip を Hfq(丸)/SmAP(三角) で区別、ingroup クレードをハイライト。
+- 注意点：ape `root(resolve.root=TRUE)` は外群を割ることがある（getMRCA が全体を返す）。ingroup(220) はクリーンな単系統なのでそちらを基準に描画。
+
+**② ML×Bayes concordance 図：** `scripts/viz/plot_hfq_concordance.R` → `4-results/hfq_tree_concordance.{pdf,png}`
+- 各内部ノードを bipartition 照合（参照 tip 基準で正準化、有根ML↔無根MB）で4カテゴリ配色：
+  - **both high（UFBoot≥95 & PP≥0.95）：36**／ML only：55／Bayes only：6／both weak：127
+  - compare_ml_bayes.py（強支持91＝both high 36＋ML only 55）と一致。
+- 視覚的ストーリー：**末端クレードは赤/橙、深部バックボーンは灰**＝「深部の解像限界」が一目で分かる。論文 Figure 候補。
+- treeio `read.mrbayes()` で MB con.tre の `prob` を読み、ML ノードに写像。
+
+---
+
 ## 配列リスト
 
 | Accession | Organism | 備考 |
