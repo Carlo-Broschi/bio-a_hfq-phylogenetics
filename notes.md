@@ -459,6 +459,8 @@ R 環境は導入済み・動作確認済み（ggtree 4.2.0・treeio 1.36.1・ap
 - 視覚的ストーリー：**末端クレードは赤/橙、深部バックボーンは灰**＝「深部の解像限界」が一目で分かる。論文 Figure 候補。
 - treeio `read.mrbayes()` で MB con.tre の `prob` を読み、ML ノードに写像。
 
+**③ tip ラベル注釈：** `scripts/analytics/build_tip_labels.py` → `4-results/tip_labels.tsv`（accession→生物名 Genus species、FASTA ヘッダの [Organism] 抽出、RUXX_METTH は特例で Methanothermobacter thermautotrophicus）。全225 tip 命中、202属。concordance 図の tip を生物名（イタリック）に置換、外群 SmAP 5件は太字。クレードは生物学的に妥当（Staphylococcus 群・複数 Bacillus クレード等）にまとまることを確認。
+
 ---
 
 ## 配列リスト

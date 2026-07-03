@@ -1,0 +1,507 @@
+tip_key	organism	genus
+AAL63028.1	Pyrobaculum aerophilum	Pyrobaculum
+NP_069198.1	Archaeoglobus fulgidus	Archaeoglobus
+NP_341755.1	Sulfolobus solfataricus	Sulfolobus
+NP_963332.1	Nanoarchaeum equitans	Nanoarchaeum
+WP_003535434.1	Sinorhizobium/Ensifer group	Sinorhizobium/Ensifer
+WP_004152891.1	Bacteria	Bacteria
+WP_004212587.1	Sphingomonadales	Sphingomonadales
+WP_005030511.1	Acinetobacter	Acinetobacter
+WP_005097347.1	Acinetobacter	Acinetobacter
+WP_006690919.1	Centipeda	Centipeda
+WP_007902656.1	Bacteria	Bacteria
+WP_009350513.1	Selenomonadaceae	Selenomonadaceae
+WP_009441885.1	Selenomonadaceae	Selenomonadaceae
+WP_009442889.1	Selenomonadaceae	Selenomonadaceae
+WP_009453400.1	Leptothrix	Leptothrix
+WP_011275895.1	Staphylococcus	Staphylococcus
+WP_014168311.1	Enterobacteriaceae	Enterobacteriaceae
+WP_014424739.1	Pseudoselenomonas	Pseudoselenomonas
+WP_014464241.1	Alicyclobacillus	Alicyclobacillus
+WP_017227929.1	Cupriavidus sp.	Cupriavidus
+WP_017724345.1	Staphylococcus sp.	Staphylococcus
+WP_019542097.1	Dongibacter bovis	Dongibacter
+WP_019911399.1	unclassified	unclassified
+WP_021170641.1	Sporomusa	Sporomusa
+WP_021694502.1	Limimaricola	Limimaricola
+WP_030029998.1	Bacillus cereus	Bacillus
+WP_031568600.1	Rheinheimera	Rheinheimera
+WP_033169131.1	Selenomonadaceae	Selenomonadaceae
+WP_034795158.1	Enterobacterales	Enterobacterales
+WP_037354417.1	Selenomonadaceae	Selenomonadaceae
+WP_045240544.1	Cupriavidus sp.	Cupriavidus
+WP_047496328.1	Sphaerotilaceae	Sphaerotilaceae
+WP_047502530.1	Sphaerotilaceae	Sphaerotilaceae
+WP_050716411.1	Ottowia	Ottowia
+WP_053100337.1	Thiopseudomonas	Thiopseudomonas
+WP_054141683.1	unclassified	unclassified
+WP_054937653.1	Neomoorella	Neomoorella
+WP_055464247.1	Marinomonas	Marinomonas
+WP_056469939.1	Rhizobacter	Rhizobacter
+WP_056655222.1	Rhizobacter	Rhizobacter
+WP_059234622.1	Burkholderia cepacia	Burkholderia
+WP_061237443.1	Pseudomonadaceae	Pseudomonadaceae
+WP_065486652.1	Bacillus	Bacillus
+WP_066252897.1	Bacillaceae	Bacillaceae
+WP_067466645.1	Qipengyuania	Qipengyuania
+WP_069872771.1	unclassified	unclassified
+WP_070183887.1	Bacillus cereus	Bacillus
+WP_072191040.1	Bacillus thuringiensis	Bacillus
+WP_074515872.1	Selenomonas sp.	Selenomonas
+WP_075445613.1	Pseudoselenomonas	Pseudoselenomonas
+WP_083355553.1	Pseudomonas	Pseudomonas
+WP_086195493.1	Acinetobacter	Acinetobacter
+WP_086210155.1	Acinetobacter	Acinetobacter
+WP_086481701.1	Oceanospirillum	Oceanospirillum
+WP_090262978.1	Pseudomonas panipatensis	Pseudomonas
+WP_090695847.1	Bacillus	Bacillus
+WP_095109354.1	Pseudomonas	Pseudomonas
+WP_098414594.1	unclassified	unclassified
+WP_100536448.1	Caryophanales	Caryophanales
+WP_105935156.1	Alteromonadaceae	Alteromonadaceae
+WP_108950774.1	Parazoarcus	Parazoarcus
+WP_116320393.1	Cupriavidus	Cupriavidus
+WP_119614606.1	Staphylococcus sp.	Staphylococcus
+WP_125432228.1	Stenotrophomonas	Stenotrophomonas
+WP_126837977.1	unclassified	unclassified
+WP_128445003.1	Neorhizobium	Neorhizobium
+WP_128855224.1	Bacillus sp.	Bacillus
+WP_128856755.1	Bacillus sp.	Bacillus
+WP_128856831.1	Bacillus sp.	Bacillus
+WP_131314738.1	Acinetobacter brisouioides	Acinetobacter
+WP_131373951.1	Acinetobacter brisouioides	Acinetobacter
+WP_131380545.1	Acinetobacter brisouisimilis	Acinetobacter
+WP_136829438.1	Robertmurraya kyonggiensis	Robertmurraya
+WP_143997766.1	Lysinibacillus fusiformis	Lysinibacillus
+WP_150018099.1	unclassified	unclassified
+WP_150640442.1	Pseudomonas	Pseudomonas
+WP_151713038.1	Acinetobacter	Acinetobacter
+WP_166839038.1	Rheinheimera	Rheinheimera
+WP_167921117.1	Sphingopyxis	Sphingopyxis
+WP_180027670.1	unclassified	unclassified
+WP_193650775.1	Acidithiobacillus	Acidithiobacillus
+WP_198352910.1	Sphingomonas	Sphingomonas
+WP_200609374.1	Lysobacter	Lysobacter
+WP_201558377.1	Psychrobacter sp.	Psychrobacter
+WP_201661278.1	Rhizobiaceae	Rhizobiaceae
+WP_209386607.1	Sphaerotilaceae	Sphaerotilaceae
+WP_213360738.1	Allobrachymonas	Allobrachymonas
+WP_214729075.1	Bacillaceae	Bacillaceae
+WP_225676061.1	Thalassolituus	Thalassolituus
+WP_226550334.1	Caryophanales	Caryophanales
+WP_235199312.1	unclassified	unclassified
+WP_243169446.1	Bacillus	Bacillus
+WP_249340006.1	unclassified	unclassified
+WP_264129179.1	Pollutimonas	Pollutimonas
+WP_265071262.1	Selenomonas	Selenomonas
+WP_268799311.1	Pseudomonas	Pseudomonas
+WP_271874816.1	unclassified	unclassified
+WP_274533653.1	Sphingomonas	Sphingomonas
+WP_277426757.1	unclassified	unclassified
+WP_281092828.1	Fusibacter	Fusibacter
+WP_281645804.1	unclassified	unclassified
+WP_286692004.1	Brevundimonas	Brevundimonas
+WP_287947038.1	Shewanella	Shewanella
+WP_291524166.1	unclassified	unclassified
+WP_292916613.1	Nitrosomonas	Nitrosomonas
+WP_295906009.1	Vibrio sp.	Vibrio
+WP_297616579.1	Roseicyclus sp.	Roseicyclus
+WP_297817666.1	Paraglaciecola sp.	Paraglaciecola
+WP_298080961.1	Cardiobacterium sp.	Cardiobacterium
+WP_298664908.1	Haemophilus sp.	Haemophilus
+WP_299753858.1	Boseongicola sp.	Boseongicola
+WP_301116605.1	Pusillimonas sp.	Pusillimonas
+WP_305268940.1	Moraxellaceae	Moraxellaceae
+WP_305903468.1	Hahella	Hahella
+WP_307271497.1	Labrys	Labrys
+WP_307409213.1	Neobacillus	Neobacillus
+WP_310234610.1	Luteimonas	Luteimonas
+WP_314229138.1	Kingella sp.	Kingella
+WP_314271880.1	Kingella sp.	Kingella
+WP_314619875.1	Selenomonas sp.	Selenomonas
+WP_315461247.1	unclassified	unclassified
+WP_317973859.1	Novosphingobium	Novosphingobium
+WP_318404667.1	Polaromonas	Polaromonas
+WP_325443306.1	Pusillimonas sp.	Pusillimonas
+WP_329691515.1	Rhizobacter sp.	Rhizobacter
+WP_334131639.1	Silanimonas	Silanimonas
+WP_334555714.1	Vibrio	Vibrio
+WP_335548922.1	Neobacillus	Neobacillus
+WP_336577388.1	Bacillus	Bacillus
+WP_339663999.1	Psychrobacter	Psychrobacter
+WP_340828582.1	Bacillus	Bacillus
+WP_340828798.1	Bacillus	Bacillus
+WP_340829178.1	Bacillus	Bacillus
+WP_340954384.1	Bacillus	Bacillus
+WP_341093572.1	Bacillus	Bacillus
+WP_341632530.1	Sphingomonas	Sphingomonas
+WP_345196773.1	Kistimonas	Kistimonas
+WP_348779593.1	Phyllobacteriaceae	Phyllobacteriaceae
+WP_368846221.1	Selenomonas oralis	Selenomonas
+WP_368864229.1	Staphylococcus	Staphylococcus
+WP_373603231.1	Pasteurellaceae	Pasteurellaceae
+WP_374056717.1	Rossellomorea	Rossellomorea
+WP_375597400.1	Devosia	Devosia
+WP_377732400.1	Paenisporosarcina	Paenisporosarcina
+WP_379197056.1	unclassified	unclassified
+WP_379210080.1	unclassified	unclassified
+WP_379967464.1	Ectobacillus	Ectobacillus
+WP_394187461.1	Paenisporosarcina	Paenisporosarcina
+WP_404393334.1	Pseudoalteromonas	Pseudoalteromonas
+WP_411189219.1	Paraburkholderia	Paraburkholderia
+WP_414928642.1	unclassified	unclassified
+WP_416644179.1	unclassified	unclassified
+WP_419117040.1	unclassified	unclassified
+WP_428186818.1	unclassified	unclassified
+WP_434125083.1	Enterobacterales	Enterobacterales
+WP_435667512.1	unclassified	unclassified
+WP_438616890.1	Pampinifervens florentissimum	Pampinifervens
+WP_443481614.1	Niallia	Niallia
+WP_444787056.1	unclassified	unclassified
+WP_447102925.1	Pseudoxanthomonas	Pseudoxanthomonas
+WP_447124199.1	unclassified	unclassified
+WP_449114897.1	unclassified	unclassified
+WP_454465455.1	Aliikangiella aequoris	Aliikangiella
+WP_454781520.1	Legionella	Legionella
+WP_456164917.1	Leptothrix mechoopdaensis	Leptothrix
+WP_458044758.1	Enterobacteriaceae	Enterobacteriaceae
+WP_458802384.1	Acinetobacter	Acinetobacter
+WP_458809167.1	Acinetobacter brisouisimilis	Acinetobacter
+WP_458837366.1	Acinetobacter brisouioides	Acinetobacter
+WP_458847063.1	Acinetobacter brisouisimilis	Acinetobacter
+WP_473034231.1	Halomonadaceae	Halomonadaceae
+WP_474650221.1	Paenibacillus sp.	Paenibacillus
+WP_474677813.1	Paenibacillus sp.	Paenibacillus
+WP_475763628.1	unclassified	unclassified
+WP_482575343.1	Rhodoferax sp.	Rhodoferax
+WP_483015225.1	Stenotrophomonas rhizophila	Stenotrophomonas
+WP_483117498.1	Mycetohabitans rhizoxinica	Mycetohabitans
+WP_483119855.1	Mycetohabitans rhizoxinica	Mycetohabitans
+WP_483148253.1	Erythrobacter/Porphyrobacter group	Erythrobacter/Porphyrobacter
+WP_483165449.1	unclassified	unclassified
+WP_483253996.1	Qipengyuania citrea	Qipengyuania
+WP_483267178.1	Vescimonas sp.	Vescimonas
+WP_483291255.1	Abyssisolibacter sp.	Abyssisolibacter
+WP_483372115.1	Staphylococcus saprophyticus	Staphylococcus
+WP_483473270.1	Qipengyuania flava	Qipengyuania
+WP_483479589.1	Caballeronia sp.	Caballeronia
+WP_483498828.1	Bacillus cereus	Bacillus
+WP_483498833.1	Bacillus cereus	Bacillus
+WP_483509602.1	unclassified	unclassified
+WP_483531775.1	Aurantiacibacter sp.	Aurantiacibacter
+WP_483637933.1	Rhodanobacter sp.	Rhodanobacter
+WP_483659554.1	Sphingomonas sp.	Sphingomonas
+WP_483661909.1	Shigella sonnei	Shigella
+WP_483714782.1	Cupriavidus sp.	Cupriavidus
+WP_483772248.1	Bacillus thuringiensis	Bacillus
+WP_483812591.1	Mammaliicoccus sciuri	Mammaliicoccus
+WP_483818943.1	Bacillus tropicus	Bacillus
+WP_483825941.1	Pasteurella multocida	Pasteurella
+WP_483833148.1	Pseudomonas artemisiae	Pseudomonas
+WP_483856775.1	Zestomonas ipomoeae	Zestomonas
+WP_483875583.1	Pelovirga sp.	Pelovirga
+WP_483906983.1	Alcanivorax sp.	Alcanivorax
+WP_483908561.1	Alcanivorax sp.	Alcanivorax
+WP_483922413.1	Alcanivorax sp.	Alcanivorax
+WP_483938951.1	Aquabacterium sp.	Aquabacterium
+WP_484017309.1	Colwellia sp.	Colwellia
+WP_484025198.1	Cellvibrio sp.	Cellvibrio
+WP_484032902.1	Candidatus	Candidatus
+WP_484039214.1	Castellaniella sp.	Castellaniella
+WP_484128442.1	Hyphomonas sp.	Hyphomonas
+WP_484129588.1	Hydrogenovibrio sp.	Hydrogenovibrio
+WP_484142205.1	Magnetovibrio sp.	Magnetovibrio
+WP_484172266.1	unclassified	unclassified
+WP_484184017.1	Motiliproteus sp.	Motiliproteus
+WP_484189755.1	Motiliproteus sp.	Motiliproteus
+WP_484207798.1	Novosphingobium sp.	Novosphingobium
+WP_484210537.1	Novosphingobium sp.	Novosphingobium
+WP_484218519.1	Phascolarctobacterium succinatutens	Phascolarctobacterium
+WP_484220535.1	Parasphingorhabdus sp.	Parasphingorhabdus
+WP_484230096.1	Perlucidibaca sp.	Perlucidibaca
+WP_484267249.1	Psychrobacter sp.	Psychrobacter
+WP_484272484.1	Quisquiliibacterium sp.	Quisquiliibacterium
+WP_484299978.1	Romboutsia sp.	Romboutsia
+WP_484312207.1	Reyranella sp.	Reyranella
+WP_484353357.1	Sneathiella sp.	Sneathiella
+WP_484356335.1	Sphingorhabdus sp.	Sphingorhabdus
+WP_484359300.1	Shimia sp.	Shimia
+WP_484363453.1	Sphingomonas sp.	Sphingomonas
+WP_484392961.1	Succiniclasticum sp.	Succiniclasticum
+WP_484422245.1	Vescimonas sp.	Vescimonas
+WP_484425617.1	Vescimonas sp.	Vescimonas
+WP_484428410.1	Vescimonas sp.	Vescimonas
+WP_484432416.1	Vescimonas sp.	Vescimonas
+WP_484438779.1	Vescimonas sp.	Vescimonas
+WP_484456535.1	Acinetobacter variabilis	Acinetobacter
+WP_484462794.1	Bacillus mycoides	Bacillus
+WP_484467104.1	Bacillus cereus	Bacillus
+WP_484467703.1	Bacillus cereus	Bacillus
+WP_484467854.1	Bacillus cereus	Bacillus
+WP_484485371.1	Cellvibrio sp.	Cellvibrio
+WP_484608857.1	Curvibacter sp.	Curvibacter
+WP_484614145.1	Comamonas resistens	Comamonas
+WP_484619985.1	Ferrimonas sp.	Ferrimonas
+WP_484632308.1	Hydrogenophaga sp.	Hydrogenophaga
+WP_484640043.1	Aquabacterium sp.	Aquabacterium
+WP_484697792.1	Paenibacillus sp.	Paenibacillus
+WP_484699946.1	Roseovarius sp.	Roseovarius
+WP_484717309.1	Sphingopyxis sp.	Sphingopyxis
+WP_484727719.1	Roseateles sp.	Roseateles
+WP_484745417.1	Roseomonas sp.	Roseomonas
+WP_485178135.1	Acinetobacter variabilis	Acinetobacter
+WP_485403650.1	Candidatus	Candidatus
+WP_485404243.1	Pampinifervens	Pampinifervens
+WP_485652686.1	Proteus mirabilis	Proteus
+WP_485656885.1	Selenomonas sp.	Selenomonas
+WP_485668899.1	Sporomusa sp.	Sporomusa
+WP_485856531.1	Bacillus cereus	Bacillus
+WP_485860945.1	Aggregatibacter sp.	Aggregatibacter
+WP_485871619.1	Listeria tempestatis	Listeria
+WP_485899288.1	Deferrivibrio metallireducens	Deferrivibrio
+WP_485913801.1	Moraxella nonliquefaciens	Moraxella
+WP_485918590.1	Kingella denitrificans	Kingella
+WP_485921543.1	Haemophilus sp.	Haemophilus
+WP_485929066.1	Kingella sp.	Kingella
+WP_485946938.1	Kingella oralis	Kingella
+WP_485951500.1	Kingella sp.	Kingella
+WP_485955073.1	Eikenella halliae	Eikenella
+WP_485982871.1	Cardiobacterium sp.	Cardiobacterium
+WP_485985241.1	Komagataeibacter sp.	Komagataeibacter
+WP_486008653.1	Ottowia sp.	Ottowia
+WP_486010968.1	Ottowia sp.	Ottowia
+WP_486029757.1	Virgibacillus oceani	Virgibacillus
+WP_486044724.1	Thiomicrorhabdus sp.	Thiomicrorhabdus
+WP_486128519.1	Erythrobacter sp.	Erythrobacter
+WP_486142832.1	Erythrobacter sp.	Erythrobacter
+WP_486146203.1	unclassified	unclassified
+WP_486158964.1	Erythrobacter sp.	Erythrobacter
+WP_486163853.1	unclassified	unclassified
+WP_486167192.1	Erythrobacter sp.	Erythrobacter
+WP_486172429.1	Erythrobacter sp.	Erythrobacter
+WP_486177567.1	Erythrobacter sp.	Erythrobacter
+WP_486183619.1	Erythrobacter sp.	Erythrobacter
+WP_486243994.1	Oxalicibacterium sp.	Oxalicibacterium
+WP_486318069.1	Aliivibrio friggae	Aliivibrio
+WP_486391610.1	Trinickia sp.	Trinickia
+WP_486401310.1	Acinetobacter johnsonii	Acinetobacter
+WP_486404054.1	Pseudomonas sp.	Pseudomonas
+WP_486410232.1	Comamonas sp.	Comamonas
+WP_486466597.1	Pseudooceanicola sp.	Pseudooceanicola
+WP_486491959.1	Acinetobacter soli	Acinetobacter
+WP_486495493.1	Aeromonas enteropelogenes	Aeromonas
+WP_486522585.1	Novosphingobium sp.	Novosphingobium
+WP_486530059.1	Psychrobacter sp.	Psychrobacter
+WP_486535891.1	Psychrobacter sp.	Psychrobacter
+WP_486540920.1	unclassified	unclassified
+WP_486541068.1	Novosphingobium pentaromativorans	Novosphingobium
+WP_486546760.1	unclassified	unclassified
+WP_486548736.1	Psychrobacter sp.	Psychrobacter
+WP_486601931.1	Denitratimonas yunnanensis	Denitratimonas
+WP_486605713.1	Denitratimonas yunnanensis	Denitratimonas
+WP_486627773.1	Lysinibacillus xylanilyticus	Lysinibacillus
+WP_486672593.1	Sedimentibacter sp.	Sedimentibacter
+WP_486731391.1	Herbaspirillum sp.	Herbaspirillum
+WP_486768366.1	Parasphingopyxis sp.	Parasphingopyxis
+WP_486801395.1	Sulfuriflexus sp.	Sulfuriflexus
+WP_486866463.1	Parasutterella excrementihominis	Parasutterella
+WP_486881171.1	Acidithiobacillus sp.	Acidithiobacillus
+WP_486896248.1	Bacillus thuringiensis	Bacillus
+WP_486909575.1	Bacillus mycoides	Bacillus
+WP_486927431.1	Bacillus mycoides	Bacillus
+WP_486943013.1	Paenalcaligenes sp.	Paenalcaligenes
+WP_486948255.1	Paenalcaligenes sp.	Paenalcaligenes
+WP_486978498.1	Vescimonas sp.	Vescimonas
+WP_487031834.1	Staphylococcus aureus	Staphylococcus
+WP_487031872.1	Staphylococcus aureus	Staphylococcus
+WP_487032986.1	Staphylococcus aureus	Staphylococcus
+WP_487038913.1	Staphylococcus aureus	Staphylococcus
+WP_487047510.1	Colwellia maritima	Colwellia
+WP_487054724.1	Colwellia sp.	Colwellia
+WP_487075845.1	Alteromonas sp.	Alteromonas
+WP_487082200.1	Colwellia aquaemaris	Colwellia
+WP_487096366.1	Colwellia sp.	Colwellia
+WP_487106499.1	Colwellia sp.	Colwellia
+WP_487116668.1	Colwellia sp.	Colwellia
+WP_487118486.1	Colwellia sp.	Colwellia
+WP_487131774.1	Colwellia meonggei	Colwellia
+WP_487135219.1	Alteromonas sp.	Alteromonas
+WP_487154672.1	Halopseudomonas sp.	Halopseudomonas
+WP_487193244.1	Pseudoalteromonas tetraodonis	Pseudoalteromonas
+WP_487206175.1	Salmonella enterica	Salmonella
+WP_487241948.1	Roseovarius sp.	Roseovarius
+WP_487259358.1	Bacillus toyonensis	Bacillus
+WP_487276853.1	Burkholderia cenocepacia	Burkholderia
+WP_487285421.1	Burkholderia cenocepacia	Burkholderia
+WP_487286649.1	Burkholderia cenocepacia	Burkholderia
+WP_487293067.1	Burkholderia cenocepacia	Burkholderia
+WP_487295725.1	Burkholderia cenocepacia	Burkholderia
+WP_487305282.1	Caballeronia sp.	Caballeronia
+WP_487306118.1	Caballeronia sp.	Caballeronia
+WP_487307480.1	Burkholderia cenocepacia	Burkholderia
+WP_487315469.1	Gallaecimonas sp.	Gallaecimonas
+WP_487370589.1	Psychrobacter sp.	Psychrobacter
+WP_487392268.1	Staphylococcus aureus	Staphylococcus
+WP_487395032.1	Roseomonas sp.	Roseomonas
+WP_487400542.1	Sphingomonas sp.	Sphingomonas
+WP_487410737.1	Staphylococcus hyicus	Staphylococcus
+WP_487415231.1	Vibrio azureus	Vibrio
+WP_487426701.1	Acidaminococcus sp.	Acidaminococcus
+WP_487432878.1	Bacillus thuringiensis	Bacillus
+WP_487437616.1	Azoarcus sp.	Azoarcus
+WP_487496315.1	Eikenella corrodens	Eikenella
+WP_487506810.1	Candidatus	Candidatus
+WP_487531324.1	Escherichia coli	Escherichia
+WP_487543406.1	Devosia sp.	Devosia
+WP_487548726.1	Dethiosulfatibacter sp.	Dethiosulfatibacter
+WP_487583868.1	Lysobacter sp.	Lysobacter
+WP_487618133.1	Luteimonas sp.	Luteimonas
+WP_487631065.1	Luteimonas sp.	Luteimonas
+WP_487700708.1	Moritella sp.	Moritella
+WP_487710369.1	Phascolarctobacterium succinatutens	Phascolarctobacterium
+WP_487736696.1	Pelagerythrobacter sp.	Pelagerythrobacter
+WP_487751938.1	Pseudoxanthomonas sp.	Pseudoxanthomonas
+WP_487953175.1	Hyphomonas sp.	Hyphomonas
+WP_487962800.1	Marinagarivorans sp.	Marinagarivorans
+WP_487970623.1	Paracidovorax sp.	Paracidovorax
+WP_488003211.1	Planktotalea sp.	Planktotalea
+WP_488032936.1	Psychrosphaera sp.	Psychrosphaera
+WP_488082314.1	Thalassobacter sp.	Thalassobacter
+WP_488085273.1	Rheinheimera sp.	Rheinheimera
+WP_488104663.1	Bacillus toyonensis	Bacillus
+WP_488113981.1	Endozoicomonas sp.	Endozoicomonas
+WP_488124884.1	unclassified	unclassified
+WP_488146564.1	Sporosarcina sp.	Sporosarcina
+WP_488169682.1	Francisella halioticida	Francisella
+WP_488172342.1	Francisella sp.	Francisella
+WP_488181709.1	Heliomicrobium sulfidophilum	Heliomicrobium
+WP_488236974.1	Fluviibacter sp.	Fluviibacter
+WP_488242177.1	Aquabacterium sp.	Aquabacterium
+WP_488272026.1	Sporomusa sp.	Sporomusa
+WP_488275733.1	Sphingomonas sp.	Sphingomonas
+WP_488282542.1	Bacillus sp.	Bacillus
+WP_488288093.1	Ramlibacter sp.	Ramlibacter
+WP_488328910.1	Neobacillus sp.	Neobacillus
+WP_488336816.1	Sphingomonas sp.	Sphingomonas
+WP_488341049.1	Xylophilus sp.	Xylophilus
+WP_488385000.1	Frateuria sp.	Frateuria
+WP_488414381.1	Sphingomonas changbaiensis	Sphingomonas
+WP_488488280.1	Novosphingobium sp.	Novosphingobium
+WP_488532052.1	Ramlibacter sp.	Ramlibacter
+WP_488545099.1	Ramlibacter sp.	Ramlibacter
+WP_488570521.1	Novosphingobium sp.	Novosphingobium
+WP_488580857.1	Acinetobacter venetianus	Acinetobacter
+WP_488584070.1	Acinetobacter sp.	Acinetobacter
+WP_488634323.1	Dyella sp.	Dyella
+WP_488642977.1	Glaciimonas sp.	Glaciimonas
+WP_488665467.1	Comamonas sp.	Comamonas
+WP_488698136.1	Cupriavidus sp.	Cupriavidus
+WP_488728932.1	Cupriavidus sp.	Cupriavidus
+WP_488729542.1	Cupriavidus sp.	Cupriavidus
+WP_488783763.1	Centipeda sp.	Centipeda
+WP_488787497.1	Centipeda sp.	Centipeda
+WP_488793280.1	Centipeda sp.	Centipeda
+WP_488795101.1	Centipeda sp.	Centipeda
+WP_488803822.1	Acinetobacter baumannii	Acinetobacter
+WP_488803840.1	Acinetobacter baumannii	Acinetobacter
+WP_488803858.1	Acinetobacter baumannii	Acinetobacter
+WP_488811840.1	Aquitalea sp.	Aquitalea
+WP_488815449.1	Acinetobacter baumannii	Acinetobacter
+WP_488827955.1	Bacillus sp.	Bacillus
+WP_488828549.1	Aquabacterium sp.	Aquabacterium
+WP_488833687.1	Cellvibrio sp.	Cellvibrio
+WP_488846405.1	Acinetobacter baumannii	Acinetobacter
+WP_488874104.1	Comamonas sp.	Comamonas
+WP_488885866.1	Bacillus toyonensis	Bacillus
+WP_488886172.1	Bacillus toyonensis	Bacillus
+WP_488886212.1	Bacillus toyonensis	Bacillus
+WP_488891282.1	Caballeronia sp.	Caballeronia
+WP_488900870.1	Caulobacter sp.	Caulobacter
+WP_488970986.1	unclassified	unclassified
+WP_488978818.1	Paenibacillus sp.	Paenibacillus
+WP_488999566.1	Novosphingobium sp.	Novosphingobium
+WP_489003893.1	Rhodanobacter soli	Rhodanobacter
+WP_489009791.1	Serratia sp.	Serratia
+WP_489009801.1	Serratia sp.	Serratia
+WP_489033040.1	Sphingomonas sp.	Sphingomonas
+WP_489054938.1	Sphingobium sp.	Sphingobium
+WP_489064281.1	Sphingomonas sp.	Sphingomonas
+WP_489120086.1	Centipeda sp.	Centipeda
+WP_489123877.1	Centipeda sp.	Centipeda
+WP_489130479.1	Acinetobacter venetianus	Acinetobacter
+WP_489132144.1	Centipeda sp.	Centipeda
+WP_489133332.1	Centipeda sp.	Centipeda
+WP_489152509.1	Lysinibacillus sp.	Lysinibacillus
+WP_489161867.1	Aeromonas encheleia	Aeromonas
+WP_489190757.1	unclassified	unclassified
+WP_489212495.1	Acidisoma sibiricum	Acidisoma
+WP_489226541.1	Acinetobacter albensis	Acinetobacter
+WP_489242162.1	Macrococcus sp.	Macrococcus
+WP_489249654.1	Acinetobacter sp.	Acinetobacter
+WP_489258241.1	Pseudomonas sp.	Pseudomonas
+WP_489295096.1	Stenotrophomonas sp.	Stenotrophomonas
+WP_489303377.1	Stenotrophomonas sp.	Stenotrophomonas
+WP_489331433.1	Pantoea allii	Pantoea
+WP_489342086.1	Pseudomonas sp.	Pseudomonas
+WP_489350288.1	Serratia sp.	Serratia
+WP_489380566.1	Pseudomonas spelaei	Pseudomonas
+WP_489423083.1	Virgibacillus carmonensis	Virgibacillus
+WP_489432041.1	Variovorax beijingensis	Variovorax
+WP_489442942.1	Viridibacillus arvi	Viridibacillus
+WP_489464604.1	Rhizobacter sp.	Rhizobacter
+WP_489466832.1	Rhizobacter sp.	Rhizobacter
+WP_489499252.1	Acidaminococcus fermentans	Acidaminococcus
+WP_489536055.1	Rhizobacter sp.	Rhizobacter
+WP_489565859.1	Ruminococcus callidus	Ruminococcus
+WP_489607686.1	Aggregatibacter sp.	Aggregatibacter
+WP_489609707.1	Aeromonas enteropelogenes	Aeromonas
+WP_489645164.1	Sodalis ligni	Sodalis
+WP_489705872.1	Escherichia coli	Escherichia
+WP_489732230.1	Paraglaciecola sp.	Paraglaciecola
+WP_489748416.1	Sporosarcina sp.	Sporosarcina
+WP_489794761.1	Bacillus cereus	Bacillus
+WP_489804279.1	unclassified	unclassified
+WP_489823438.1	Gluconobacter sp.	Gluconobacter
+WP_489827564.1	Legionella pneumophila	Legionella
+WP_489833465.1	Listeria monocytogenes	Listeria
+WP_489864513.1	Thioclava sp.	Thioclava
+WP_489945361.1	Photobacterium halotolerans	Photobacterium
+WP_489961888.1	Pseudoflavonifractor sp.	Pseudoflavonifractor
+WP_490015860.1	Psychrobacter sp.	Psychrobacter
+WP_490026987.1	Erythrobacter sp.	Erythrobacter
+WP_490033013.1	Colwellia sp.	Colwellia
+WP_490040448.1	Litoreibacter sp.	Litoreibacter
+WP_490053361.1	Sphingorhabdus sp.	Sphingorhabdus
+WP_490070440.1	Komagataeibacter intermedius	Komagataeibacter
+WP_490112326.1	Parendozoicomonas sp.	Parendozoicomonas
+WP_490126544.1	Providencia sp.	Providencia
+WP_490140849.1	Sporacetigenium sp.	Sporacetigenium
+WP_490181917.1	Acinetobacter junii	Acinetobacter
+WP_490198023.1	Bacillus sp.	Bacillus
+WP_490211696.1	Neobacillus sp.	Neobacillus
+WP_490238672.1	Pseudothermotoga sp.	Pseudothermotoga
+WP_490250408.1	Pseudothermotoga sp.	Pseudothermotoga
+WP_490253363.1	Pseudothermotoga sp.	Pseudothermotoga
+WP_490289166.1	Faucicola osloensis	Faucicola
+WP_490310689.1	Pseudoalteromonas sp.	Pseudoalteromonas
+WP_490318722.1	Psychrobacter maritimus	Psychrobacter
+WP_490330396.1	Alcanivorax sp.	Alcanivorax
+WP_490337020.1	Croceicoccus sp.	Croceicoccus
+WP_490371214.1	Alcanivorax sp.	Alcanivorax
+WP_490376079.1	Psychromonas sp.	Psychromonas
+WP_490387685.1	Paraglaciecola sp.	Paraglaciecola
+WP_490394384.1	Novosphingobium indicum	Novosphingobium
+WP_490403061.1	Marisediminitalea sp.	Marisediminitalea
+WP_490479944.1	Dyella sp.	Dyella
+WP_490504945.1	Ignatzschineria sp.	Ignatzschineria
+WP_490508328.1	Janibacter sp.	Janibacter
+WP_490580416.1	Pseudoalteromonas sp.	Pseudoalteromonas
+WP_490587645.1	unclassified	unclassified
+WP_490593736.1	Rhodoferax sp.	Rhodoferax
+WP_490599010.1	Psychrobacter faecalis	Psychrobacter
+WP_490607928.1	Psychrobacter cryohalolentis	Psychrobacter
+WP_490627060.1	Rhodoferax sp.	Rhodoferax
+WP_490663219.1	Staphylococcus equorum	Staphylococcus
+WP_490674411.1	Staphylococcus sp.	Staphylococcus
+sp_O26745.1_RUXX_METTH	Methanothermobacter thermautotrophicus	Methanothermobacter
+sp|O26745.1|RUXX_METTH	Methanothermobacter thermautotrophicus	Methanothermobacter

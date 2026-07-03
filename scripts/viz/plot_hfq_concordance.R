@@ -96,21 +96,35 @@ nodedf <- data.frame(node = (n_tip + 1):(n_tip + ml$Nnode),
 tab <- table(nodedf$concord)
 cat("concordance カテゴリ:\n"); print(tab)
 
+# tip ラベル注釈：accession -> 生物名（Genus species）
+lab <- read.delim(file.path(BASE, "4-results", "tip_labels.tsv"),
+                  stringsAsFactors = FALSE)
+labmap <- setNames(lab$organism, lab$tip_key)
+tipdf <- data.frame(node = seq_len(n_tip),
+                    organism = ifelse(ml$tip.label %in% names(labmap),
+                                      labmap[ml$tip.label], ml$tip.label),
+                    is_og = ml$tip.label %in% og_tips)
+
 pal <- c("both high" = "firebrick", "ML only" = "orange",
          "Bayes only" = "steelblue", "both weak" = "grey80")
 
-p <- ggtree(ml, linewidth = 0.3) %<+% nodedf +
-  geom_tippoint(size = 0.3, color = "grey50", alpha = 0.5) +
+p <- ggtree(ml, linewidth = 0.3) %<+% rbind(
+       data.frame(node = nodedf$node, concord = nodedf$concord,
+                  organism = NA, is_og = NA),
+       data.frame(node = tipdf$node, concord = NA,
+                  organism = tipdf$organism, is_og = tipdf$is_og)) +
   geom_nodepoint(aes(color = concord), size = 1.1, na.rm = TRUE) +
   scale_color_manual(values = pal, name = "Support concordance\n(UFBoot / PP)",
                      na.translate = FALSE) +
-  ggtree::hexpand(0.1) +
-  ggtitle("Hfq: ML vs Bayesian node-support concordance (225 taxa)") +
+  geom_tiplab(aes(label = organism, fontface = ifelse(is_og, "bold", "italic")),
+              size = 1.3, offset = 0.05, align = FALSE) +
+  ggtree::hexpand(0.35) +
+  ggtitle("Hfq: ML vs Bayesian node-support concordance (225 taxa; SmAP outgroup in bold)") +
   theme_tree2() +
-  theme(legend.position = c(0.12, 0.8), plot.title = element_text(size = 10))
+  theme(legend.position = c(0.12, 0.82), plot.title = element_text(size = 10))
 
 ggsave(file.path(BASE, "4-results", "hfq_tree_concordance.pdf"), p,
-       width = 8, height = 12, limitsize = FALSE)
+       width = 10, height = 26, limitsize = FALSE)
 ggsave(file.path(BASE, "4-results", "hfq_tree_concordance.png"), p,
-       width = 8, height = 12, dpi = 150, limitsize = FALSE)
+       width = 10, height = 26, dpi = 150, limitsize = FALSE)
 cat("保存: 4-results/hfq_tree_concordance.{pdf,png}\n")
