@@ -20,6 +20,12 @@ Hfq is a bacterial RNA chaperone of the Sm/Lsm superfamily, forming a hexameric 
 
 ---
 
+## Significance statement
+
+Hfq is a central bacterial RNA chaperone, yet its family phylogeny had not been reconstructed with modern dual-method inference or characterized for its resolving limits. We show that maximum-likelihood and Bayesian trees agree at 94.5% of well-supported branches and can be consistently rooted with an archaeal SmAP outgroup, and we demonstrate — through a structure-guided control — that the unresolved deep backbone is an intrinsic consequence of the protein's short length rather than a method artifact. The rooted tree recapitulates bacterial phylum-level taxonomy and forms one half of a reciprocal-outgroup framework with a companion Sm/Lsm study.
+
+---
+
 ## 1. Introduction
 
 ### Background
@@ -105,6 +111,12 @@ Finally, the Hfq phylogeny broadly recapitulates bacterial phylum-level taxonomy
 ## 5. Conclusion
 
 We present a rooted, dual-method phylogeny of the bacterial Hfq family in which maximum-likelihood and Bayesian inferences are strongly congruent at well-supported nodes and consistently rooted by an archaeal SmAP outgroup. The phylogeny broadly tracks bacterial taxonomy, consistent with vertical inheritance, while the deepest relationships remain unresolved — a limitation we attribute, and demonstrate, to the short length of the Hfq protein rather than to the inference method.
+
+---
+
+## Data Availability
+
+All protein sequences were retrieved from NCBI RefSeq; accession numbers are listed in Supplementary Table S1. The multiple sequence alignment, ML and Bayesian tree files, all analysis and figure-generating scripts, and the structural-anchor PDB accession list are available in the project repository (https://github.com/Carlo-Broschi/bio-a_hfq-phylogenetics). <!-- 投稿時：private→public 化、または Zenodo に deposit して DOI を付与（GBE は DOI 付きリポジトリを推奨）。 -->
 
 ---
 
