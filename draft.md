@@ -116,7 +116,7 @@ We present a rooted, dual-method phylogeny of the bacterial Hfq family in which 
 
 ## Data Availability
 
-All protein sequences were retrieved from NCBI RefSeq; accession numbers are listed in Supplementary Table S1. The multiple sequence alignment, ML and Bayesian tree files, all analysis and figure-generating scripts, and the structural-anchor PDB accession list are available in the project repository (https://github.com/Carlo-Broschi/bio-a_hfq-phylogenetics). <!-- 投稿時：private→public 化、または Zenodo に deposit して DOI を付与（GBE は DOI 付きリポジトリを推奨）。 -->
+All protein sequences were retrieved from NCBI RefSeq; accession numbers are listed in Supplementary Table S1. The multiple sequence alignment, ML and Bayesian tree files, all analysis and figure-generating scripts, and the structural-anchor PDB accession list are available in the project repository (https://github.com/Carlo-Broschi/bio-a_hfq-phylogenetics) and archived at Zenodo under DOI [10.5281/zenodo.21197822](https://doi.org/10.5281/zenodo.21197822). The companion Sm/Lsm study, which supplies the archaeal SmAP outgroup used here, is archived at [10.5281/zenodo.21197824](https://doi.org/10.5281/zenodo.21197824).
 
 ---
 

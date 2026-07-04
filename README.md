@@ -45,8 +45,8 @@ prediction followed by Foldseek matching against experimental Hfq folds.
 ## Data and code availability
 
 All analysis code and derived data are in this repository. Sequence accessions are
-listed in the manuscript's supplementary material. A DOI-bearing archive (Zenodo)
-will be minted at submission.
+listed in the manuscript's supplementary material. Archived at Zenodo:
+doi:10.5281/zenodo.21197822 (this study) and doi:10.5281/zenodo.21197824 (companion Sm/Lsm study).
 
 ## Author
 
