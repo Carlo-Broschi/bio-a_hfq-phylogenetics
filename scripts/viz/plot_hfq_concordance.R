@@ -115,13 +115,20 @@ p <- ggtree(ml, linewidth = 0.3) %<+% rbind(
                   organism = tipdf$organism, is_og = tipdf$is_og)) +
   geom_nodepoint(aes(color = concord), size = 1.1, na.rm = TRUE) +
   scale_color_manual(values = pal, name = "Support concordance\n(UFBoot / PP)",
-                     na.translate = FALSE) +
+                     na.translate = FALSE,
+                     guide = guide_legend(override.aes = list(size = 4.5))) +
   geom_tiplab(aes(label = organism, fontface = ifelse(is_og, "bold", "italic")),
               size = 1.3, offset = 0.05, align = FALSE) +
   ggtree::hexpand(0.35) +
   ggtitle("Hfq: ML vs Bayesian node-support concordance (225 taxa; SmAP outgroup in bold)") +
   theme_tree2() +
-  theme(legend.position = c(0.12, 0.82), plot.title = element_text(size = 10))
+  theme(legend.position = c(0.16, 0.86),
+        legend.title = element_text(size = 17, face = "bold"),
+        legend.text = element_text(size = 14),
+        legend.key.size = unit(1.3, "lines"),
+        legend.background = element_rect(fill = "white", color = "grey30", linewidth = 0.5),
+        legend.margin = margin(8, 12, 8, 12),
+        plot.title = element_text(size = 10))
 
 ggsave(file.path(BASE, "4-results", "hfq_tree_concordance.pdf"), p,
        width = 10, height = 26, limitsize = FALSE)

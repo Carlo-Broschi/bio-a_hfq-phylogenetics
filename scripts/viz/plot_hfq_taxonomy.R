@@ -57,11 +57,18 @@ p <- ggtree(ml, linewidth = 0.3) %<+% tipdf +
   geom_tiplab(aes(label = organism, color = phylum,
                   fontface = ifelse(is_og, "bold", "italic")),
               size = 1.3, offset = 0.05) +
-  scale_color_manual(values = cols, name = "Phylum", na.translate = FALSE) +
+  scale_color_manual(values = cols, name = "Phylum", na.translate = FALSE,
+                     guide = guide_legend(override.aes = list(size = 4.5))) +
   ggtree::hexpand(0.35) +
   ggtitle("Hfq phylogeny colored by bacterial phylum (225 taxa; archaea outgroup in bold)") +
   theme_tree2() +
-  theme(legend.position = c(0.12, 0.82), plot.title = element_text(size = 10))
+  theme(legend.position = c(0.16, 0.86),
+        legend.title = element_text(size = 17, face = "bold"),
+        legend.text = element_text(size = 14),
+        legend.key.size = unit(1.3, "lines"),
+        legend.background = element_rect(fill = "white", color = "grey30", linewidth = 0.5),
+        legend.margin = margin(8, 12, 8, 12),
+        plot.title = element_text(size = 10))
 
 ggsave(file.path(BASE, "4-results", "hfq_tree_taxonomy.pdf"), p,
        width = 10, height = 26, limitsize = FALSE)
