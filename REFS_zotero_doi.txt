@@ -12,7 +12,7 @@
 10.1093/sysbio/sys029             # MrBayes 3.2 (Ronquist et al. 2012)
 10.1093/sysbio/sys078             # RogueNaRok (Aberer et al. 2013)
 10.1093/bioinformatics/btq228     # DendroPy (Sukumaran & Holder 2010)
-10.1101/2024.08.01.606130         # FoldMason (Gilchrist et al. 2024) ※preprint、出版版が出ていれば差し替え
+10.1126/science.ads6733             # FoldMason (Gilchrist et al. 2026, Science 391:485-488) [peer-reviewed版に差替 2026-07-05]
 
 # --- ドメイン背景 ---
 10.3109/1040841X.2012.664540      # Hfq core length (Sobrero & Valverde 2012)

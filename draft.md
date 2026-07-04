@@ -70,7 +70,7 @@ Initial Bayesian runs on the unrooted dataset failed to converge, plateauing at 
 
 ### 2.5b Structure-guided alignment (control)
 
-To test whether structural information improves resolution, a structure-guided alignment was also produced: representative Sm-fold structures (bacterial Hfq and archaeal SmAP; 16 PDB entries) were structurally aligned with FoldMason (Gilchrist et al. 2024), dereplicated (CD-HIT 95%) into a 12-sequence structural seed, and used to guide alignment of the sequence set with MAFFT (`--seed`). After occupancy trimming this yielded 101 columns. Maximum-likelihood inference on this alignment did not improve node support relative to the plain alignment (84 vs 91 branches with UFBoot ≥ 95), so the plain alignment was retained for the primary analysis. (In the companion cross-domain Sm/Lsm study, where sequence divergence prevents reliable alignment, structure guidance is instead essential.)
+To test whether structural information improves resolution, a structure-guided alignment was also produced: representative Sm-fold structures (bacterial Hfq and archaeal SmAP; 16 PDB entries) were structurally aligned with FoldMason (Gilchrist et al. 2026), dereplicated (CD-HIT 95%) into a 12-sequence structural seed, and used to guide alignment of the sequence set with MAFFT (`--seed`). After occupancy trimming this yielded 101 columns. Maximum-likelihood inference on this alignment did not improve node support relative to the plain alignment (84 vs 91 branches with UFBoot ≥ 95), so the plain alignment was retained for the primary analysis. (In the companion cross-domain Sm/Lsm study, where sequence divergence prevents reliable alignment, structure guidance is instead essential.)
 
 ### 2.6 Topology comparison
 
@@ -126,7 +126,7 @@ All protein sequences were retrieved from NCBI RefSeq; accession numbers are lis
 - Method tools: Li & Godzik 2006 (CD-HIT); Katoh & Standley 2013 (MAFFT);
   **Wong et al. 2026 (IQ-TREE3, DOI 10.1093/molbev/msag117)** ※Minh et al. 2020 は IQ-TREE2 なので誤り、使用は IQ-TREE3;
   Kalyaanamoorthy et al. 2017 (ModelFinder); Hoang et al. 2018 (UFBoot2, msx281); Ronquist et al. 2012 (MrBayes, sys029);
-  Aberer et al. 2013 (RogueNaRok, sys078); Sukumaran & Holder 2010 (dendropy); Gilchrist et al. 2024 (FoldMason).
+  Aberer et al. 2013 (RogueNaRok, sys078); Sukumaran & Holder 2010 (dendropy); Gilchrist et al. 2026 (FoldMason).
 - Domain/background: Sobrero & Valverde 2012 (Hfq core length); Vogel & Luisi (Hfq & sRNA review, 入手済);
   **Sun, Zhulin & Wartell 2002 (Hfq phyletic distribution, NAR 30:3662, DOI 10.1093/nar/gkf508)**——§3.4/Discussion で gene-loss・門追従・Aquificales 保有の根拠（精読済）;
   **Mura et al. 2013 (Sm/Lsm/Hfq review) は DOI 10.4161/rna.24538**（誤 DOI 注意）; companion Sm/Lsm study (相互外群, 自著 bio-b).
