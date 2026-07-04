@@ -1,0 +1,24 @@
+# bio-a 参考文献 — Zotero「識別子から項目を追加」用 DOI リスト
+# 使い方：Zotero のマジックワンド（緑）を開き、下の DOI 群をまとめて貼る（コメント行#は除く）。
+# 全 DOI は CrossRef で検証済み（正しい論文に解決することを確認）。
+# 本文で実際に引用しているもののみ（bio-a body citations）。
+
+# --- 手法ツール ---
+10.1093/bioinformatics/btl158     # CD-HIT (Li & Godzik 2006)
+10.1093/molbev/mst010             # MAFFT (Katoh & Standley 2013)
+10.1093/molbev/msag117            # IQ-TREE3 (Wong et al. 2026) ※Minh2020=IQ-TREE2 は使わない
+10.1038/nmeth.4285                # ModelFinder (Kalyaanamoorthy et al. 2017)
+10.1093/molbev/msx281             # UFBoot2 (Hoang et al. 2018)
+10.1093/sysbio/sys029             # MrBayes 3.2 (Ronquist et al. 2012)
+10.1093/sysbio/sys078             # RogueNaRok (Aberer et al. 2013)
+10.1093/bioinformatics/btq228     # DendroPy (Sukumaran & Holder 2010)
+10.1101/2024.08.01.606130         # FoldMason (Gilchrist et al. 2024) ※preprint、出版版が出ていれば差し替え
+
+# --- ドメイン背景 ---
+10.3109/1040841X.2012.664540      # Hfq core length (Sobrero & Valverde 2012)
+10.1093/nar/gkf508                # Hfq phyletic distribution (Sun, Zhulin & Wartell 2002)
+
+# --- 自己引用（DOI なし・投稿時に手動）---
+# companion Sm/Lsm study = bio-b（相互外群設計、未投稿）→ "in preparation" 等で本文注記
+
+# 計 11 文献（＋自己引用1）
