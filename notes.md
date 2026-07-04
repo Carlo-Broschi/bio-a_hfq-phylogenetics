@@ -481,6 +481,14 @@ bio-b で構築した FoldMason ワークフローを bio-a にも適用。**bio
 - **構造ガイドは改善せず、わずかに低下**（懸念どおり）。列を60%削っても支持は41→38%しか落ちない＝構造コア101列が信号の大半を担うが、素の版の変異領域も有効な系統情報だった。
 - **結論：bio-a は素の版を本命として維持。** 「構造ガイドも試したが同一ファミリー内では改善せず、素のアライメントを採用」と報告可能＝**査読の「なぜ bio-b と手法を揃えない？」への回答**（試した上での判断）。bio-b（3ドメイン横断＝構造必須）との対比が、逆に両論文の方法選択の妥当性を補強する。
 
+### 2026-07-04 — 怪しい配列の構造検証（ESMFold + foldseek）
+
+draft §3.4 の「HGT/アーティファクト」議論を締めるため、怪しい配列を構造で真正性チェック。対象＝**最長枝 OTU WP_379210080.1 ＋ rogue 9本**（除去前234−除去後225の差分で復元、`3-analysis/bioa_verify_targets.fasta`）。`scripts/analytics/predict_verify_targets.py`（ESMFold）→ foldseek 照合。
+
+**結果（確定）：** 10/10 予測成功（pLDDT 0.75–0.85）。foldseek で **10/10 すべて本物の Hfq fold と確認**（`4-results/bioa_verify_foldseek.tsv`、TM-score 0.98–1.01、細菌 Hfq アンカー 1HK9/1U1S/3GIB に一致）:
+- 最長枝 OTU → 1U1S TM 0.98 ＝**LBA アーティファクトでなく本物の Hfq**（rogue 検出の妥当性検証と整合）。
+- rogue 9本すべて → Hfq fold ＝**不安定なだけで本物**（コンタミではない）。木のクリーニングが健全だったことを構造で裏付け。
+
 **④ 分類群（門）配色：** `scripts/analytics/build_taxonomy.py`（NCBI Taxonomy efetch を ElementTree で LineageEx パース、属→門/綱）→ `4-results/genus_taxonomy.tsv`。`scripts/viz/plot_hfq_taxonomy.R` → `4-results/hfq_tree_taxonomy.{pdf,png}`。
 - 注意点：属名の**同名異義**（細菌属が動植物属とかぶり真核 taxid を誤取得＝Arthropoda/Chordata 等8件）。esearch を `AND (Bacteria[subtree] OR Archaea[subtree])` で原核限定して解消。
 - tip 内訳：Pseudomonadota 114・Bacillota 92・その他少数・古細菌外群5。
