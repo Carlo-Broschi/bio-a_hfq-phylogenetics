@@ -1,6 +1,6 @@
 # bio-a Research Notes — Hfq Phylogenetics
 
-**Author:** Sui Nakai
+**Author:** Minoru Nakai
 **Started:** 2026-06-22
 
 ---

@@ -8,7 +8,7 @@ abstract: >-
 type: software
 authors:
   - family-names: Nakai
-    given-names: Sui
+    given-names: Minoru
     email: vivaldi.rv484@gmail.com
     # orcid: "https://orcid.org/0000-0000-0000-0000"  # add if available
 license: CC-BY-4.0

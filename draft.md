@@ -1,7 +1,7 @@
 # A rooted, dual-method phylogeny of the bacterial Hfq family — Manuscript Draft
 
 **Project:** bio-a — Hfq Phylogenetics
-**Author:** Sui Nakai
+**Author:** Minoru Nakai
 **Target journal:** Genome Biology and Evolution / Molecular Biology and Evolution
 **Status:** Submission preparation (2026-07); science QC-locked, GBE format assembly in `../_gbe_submission/`
 
