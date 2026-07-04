@@ -16,7 +16,7 @@
 
 ## Abstract
 
-Hfq is a bacterial RNA chaperone of the Sm/Lsm superfamily, forming a hexameric ring that mediates small-RNA–mRNA interactions. We reconstruct a rooted phylogeny of the bacterial Hfq family and characterize, quantitatively, both its congruence across inference frameworks and the limits of what a short protein can resolve. From 500 RefSeq Hfq sequences reduced to 225 taxa (220 bacterial Hfq plus five archaeal SmAP outgroup sequences) and 254 aligned sites, we infer maximum-likelihood (IQ-TREE3) and Bayesian (MrBayes) trees. The two agree closely where support is high: 94.5% of strongly-supported maximum-likelihood branches (UFBoot ≥ 95) are recovered in the Bayesian consensus, and the SmAP outgroup forms a single bipartition in both trees, allowing consistent rooting. Disagreement is confined to a poorly-supported deep backbone; a control analysis using a structure-guided alignment did not improve resolution, indicating that the limit is set by the short length of Hfq (254 informative sites) rather than by the inference method. The resulting phylogeny broadly recapitulates bacterial phylum-level taxonomy — Bacillota and Pseudomonadota each forming largely coherent assemblages — consistent with predominantly vertical inheritance. This rooted, dual-method Hfq phylogeny serves as one half of a reciprocal-outgroup design with a companion Sm/Lsm study.
+Hfq is a bacterial RNA chaperone of the Sm/Lsm superfamily, forming a hexameric ring that mediates small-RNA–mRNA interactions. We reconstruct a rooted phylogeny of the bacterial Hfq family and characterize, quantitatively, both its congruence across inference frameworks and the limits of what a short protein can resolve. From 500 RefSeq Hfq sequences reduced to 225 taxa (220 bacterial Hfq plus five archaeal SmAP outgroup sequences) and 254 aligned sites, we infer maximum-likelihood (IQ-TREE3) and Bayesian (MrBayes) trees. The two agree closely where support is high: 94.5% of strongly-supported maximum-likelihood branches (UFBoot ≥ 95) are recovered in the Bayesian consensus, and the SmAP outgroup forms a single bipartition in both trees, allowing consistent rooting. Disagreement is confined to a poorly-supported deep backbone; a control analysis using a structure-guided alignment did not improve resolution, indicating that the limit is set by the short length of Hfq (254 aligned sites, 139 parsimony-informative) rather than by the inference method. The resulting phylogeny broadly recapitulates bacterial phylum-level taxonomy — Bacillota and Pseudomonadota each forming largely coherent assemblages — consistent with predominantly vertical inheritance. This rooted, dual-method Hfq phylogeny serves as one half of a reciprocal-outgroup design with a companion Sm/Lsm study.
 
 ---
 
@@ -58,7 +58,7 @@ To root the Hfq phylogeny, five archaeal Sm-like (SmAP) proteins spanning the ma
 
 ### 2.5 Phylogenetic analysis
 
-Maximum likelihood (ML) phylogenetic inference was performed using IQ-TREE3 v3.1.3 (Minh et al. 2020). The best-fit substitution model was selected by ModelFinder (Kalyaanamoorthy et al. 2017) under the Bayesian Information Criterion (BIC). Node support was assessed by ultrafast bootstrap approximation (UFBoot; Hoang et al. 2018) with 1,000 replicates; values ≥ 95 were considered well-supported. Bayesian inference (BI) was performed using MrBayes v3.2 (Ronquist et al. 2012) under a gamma-distributed rate model, with two independent runs of four chains each and a relative burn-in of 25%.
+Maximum likelihood (ML) phylogenetic inference was performed using IQ-TREE3 v3.1.3 (Wong et al. 2026). The best-fit substitution model was selected by ModelFinder (Kalyaanamoorthy et al. 2017) under the Bayesian Information Criterion (BIC). Node support was assessed by ultrafast bootstrap approximation (UFBoot; Hoang et al. 2018) with 1,000 replicates; values ≥ 95 were considered well-supported. Bayesian inference (BI) was performed using MrBayes v3.2 (Ronquist et al. 2012) under a gamma-distributed rate model, with two independent runs of four chains each and a relative burn-in of 25%.
 
 Initial Bayesian runs on the unrooted dataset failed to converge, plateauing at an average standard deviation of split frequencies (ASDSF) near 0.09. Convergence was substantially improved by fixing the amino-acid substitution model to VT+G4 (`prset aamodelpr=fixed(vt)`), which lowered the ASDSF to 0.055. To further improve convergence, unstable ("rogue") taxa were identified with RogueNaRok (Aberer et al. 2013) from the Bayesian posterior tree sample; nine strongly destabilizing taxa (raw improvement > 0.5), all within the bacterial ingroup, were removed. The final dataset comprised 225 taxa and 254 aligned sites. Bayesian analysis of this dataset reached ASDSF = 0.047 at ~1.06 million generations, below the default stopping threshold of 0.05.
 
@@ -76,11 +76,11 @@ Congruence between the ML and Bayesian topologies was quantified by comparing in
 
 ### 3.1 Model selection and dataset
 
-ModelFinder selected Q.INSECT+G4 (initial dataset) and, after model fixing for Bayesian convergence, VT+G4 was used for the final MrBayes analysis. The curated, outgroup-rooted, rogue-filtered dataset comprised 225 taxa (220 bacterial Hfq + 5 archaeal SmAP) and 254 aligned amino-acid sites.
+ModelFinder selected Q.INSECT+I+G4 (initial dataset) and, after model fixing for Bayesian convergence, VT+G4 was used for the final MrBayes analysis. The curated, outgroup-rooted, rogue-filtered dataset comprised 225 taxa (220 bacterial Hfq + 5 archaeal SmAP) and 254 aligned amino-acid sites.
 
 ### 3.2 ML and Bayesian topologies are congruent at well-supported nodes
 
-The ML and Bayesian consensus trees shared 157 of 222 internal splits (Robinson–Foulds distance 130; 70.7% shared splits). Congruence was markedly higher among well-supported branches: of 91 ML branches with UFBoot ≥ 95, 86 (94.5%) were also present in the Bayesian consensus (median PP of matched branches = 0.92; 36 with PP ≥ 0.95). Disagreement between methods was concentrated in the poorly supported deep backbone, whereas terminal and shallow clades were consistently recovered by both methods (Fig. 1). This pattern is consistent with a data-limited rather than method-limited resolution: Hfq is a short protein (254 informative sites) sampled across many taxa, so the deepest internal branches are intrinsically difficult to resolve.
+The ML and Bayesian consensus trees shared 157 of 222 internal splits (Robinson–Foulds distance 130; 70.7% shared splits). Congruence was markedly higher among well-supported branches: of 91 ML branches with UFBoot ≥ 95, 86 (94.5%) were also present in the Bayesian consensus (median PP of matched branches = 0.92; 36 with PP ≥ 0.95). Disagreement between methods was concentrated in the poorly supported deep backbone, whereas terminal and shallow clades were consistently recovered by both methods (Fig. 1). This pattern is consistent with a data-limited rather than method-limited resolution: Hfq is a short protein (254 aligned sites, 139 parsimony-informative) sampled across many taxa, so the deepest internal branches are intrinsically difficult to resolve.
 
 ### 3.3 Rooting and clade structure
 
@@ -94,7 +94,7 @@ The bacterial ingroup was dominated by two phyla, Pseudomonadota (114 tips) and 
 
 ## 4. Discussion
 
-The maximum-likelihood and Bayesian analyses agree closely at well-supported nodes — 94.5% of strongly-supported ML branches (UFBoot ≥ 95) are recovered in the Bayesian consensus — indicating that the inferred relationships are robust to inference framework. Disagreement between the two methods is confined to the poorly-supported deep backbone. We interpret this as a data-limited rather than a method-limited outcome: with only 254 informative sites, Hfq simply does not carry enough signal to resolve the deepest splits, and no amount of additional computation removes this ceiling. Consistent with this, a structure-guided alignment — essential in the companion cross-domain Sm/Lsm study — did not improve resolution here (Section 2.5b), because within the bacterial Hfq family the variable regions discarded by structural trimming are themselves homologous and phylogenetically informative. Deeper resolution will instead require more information per taxon, for example concatenation with linked genomic characters or gene-tree/species-tree reconciliation.
+The maximum-likelihood and Bayesian analyses agree closely at well-supported nodes — 94.5% of strongly-supported ML branches (UFBoot ≥ 95) are recovered in the Bayesian consensus — indicating that the inferred relationships are robust to inference framework. Disagreement between the two methods is confined to the poorly-supported deep backbone. We interpret this as a data-limited rather than a method-limited outcome: with only 254 aligned sites (139 parsimony-informative), Hfq simply does not carry enough signal to resolve the deepest splits, and no amount of additional computation removes this ceiling. Consistent with this, a structure-guided alignment — essential in the companion cross-domain Sm/Lsm study — did not improve resolution here (Section 2.5b), because within the bacterial Hfq family the variable regions discarded by structural trimming are themselves homologous and phylogenetically informative. Deeper resolution will instead require more information per taxon, for example concatenation with linked genomic characters or gene-tree/species-tree reconciliation.
 
 Rooting with archaeal SmAP succeeded under both frameworks: the five SmAP sequences form a single bipartition separating them from the bacterial ingroup, so the Hfq family can be consistently oriented. This validates the reciprocal-outgroup design, in which the bacterial Hfq of this study serves as the outgroup for the companion Sm/Lsm analysis and vice versa.
 
@@ -111,11 +111,12 @@ We present a rooted, dual-method phylogeny of the bacterial Hfq family in which 
 ## References
 
 <!-- Zotero から出力。本文で引用済み（整形前チェックリスト）：
-- Method tools: Li & Godzik 2006 (CD-HIT); Katoh & Standley 2013 (MAFFT); Minh et al. 2020 (IQ-TREE3);
-  Kalyaanamoorthy et al. 2017 (ModelFinder); Hoang et al. 2018 (UFBoot); Ronquist et al. 2012 (MrBayes);
-  Aberer et al. 2013 (RogueNaRok); Sukumaran & Holder 2010 (dendropy); Gilchrist et al. 2024 (FoldMason).
+- Method tools: Li & Godzik 2006 (CD-HIT); Katoh & Standley 2013 (MAFFT);
+  **Wong et al. 2026 (IQ-TREE3, DOI 10.1093/molbev/msag117)** ※Minh et al. 2020 は IQ-TREE2 なので誤り、使用は IQ-TREE3;
+  Kalyaanamoorthy et al. 2017 (ModelFinder); Hoang et al. 2018 (UFBoot2, msx281); Ronquist et al. 2012 (MrBayes, sys029);
+  Aberer et al. 2013 (RogueNaRok, sys078); Sukumaran & Holder 2010 (dendropy); Gilchrist et al. 2024 (FoldMason).
 - Domain/background: Sobrero & Valverde 2012 (Hfq core length); Vogel & Luisi (Hfq & sRNA review, 入手済);
-  Mura et al. 2013 (Sm/Lsm/Hfq superfamily review); companion Sm/Lsm study (相互外群, 自著 bio-b).
+  **Mura et al. 2013 (Sm/Lsm/Hfq review) は DOI 10.4161/rna.24538**（誤 DOI 注意）; companion Sm/Lsm study (相互外群, 自著 bio-b).
 - 構造アンカー（2.5b の FoldMason 用 PDB、Table S1相当）: 1HK9/1KQ1/1U1S/2QTX/3AHU/3GIB (Hfq),
   1I8F/1I81/1TH7/1LJO/1M5Q/1M8V/1I5L/1I4K/1H64 (SmAP). 原著は bio-b structural_anchors.md 参照。
 -->
