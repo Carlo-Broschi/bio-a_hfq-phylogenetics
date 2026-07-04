@@ -1,0 +1,20 @@
+{
+  "title": "A rooted, dual-method phylogeny of the bacterial Hfq family",
+  "description": "Analysis code and derived data for a rooted, dual-method (maximum-likelihood + Bayesian) phylogeny of the bacterial Hfq family, with archaeal SmAP outgroup rooting and structural verification of tips by ESMFold and Foldseek. Companion to the Sm/Lsm superfamily study (bio-b).",
+  "upload_type": "software",
+  "access_right": "open",
+  "license": "CC-BY-4.0",
+  "creators": [
+    {
+      "name": "Nakai, Sui"
+    }
+  ],
+  "keywords": [
+    "phylogenetics",
+    "Hfq",
+    "Sm/Lsm superfamily",
+    "IQ-TREE",
+    "MrBayes",
+    "molecular evolution"
+  ]
+}

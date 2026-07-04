@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: "If you use this software or data, please cite it as below."
+title: "A rooted, dual-method phylogeny of the bacterial Hfq family"
+abstract: >-
+  Analysis code and derived data for a rooted, dual-method (maximum-likelihood +
+  Bayesian) phylogeny of the bacterial Hfq family, with archaeal SmAP outgroup
+  rooting and structural verification of tips by ESMFold and Foldseek.
+type: software
+authors:
+  - family-names: Nakai
+    given-names: Sui
+    email: vivaldi.rv484@gmail.com
+    # orcid: "https://orcid.org/0000-0000-0000-0000"  # add if available
+license: CC-BY-4.0
+repository-code: "https://github.com/Carlo-Broschi/bio-a_hfq-phylogenetics"
+keywords:
+  - phylogenetics
+  - Hfq
+  - Sm/Lsm superfamily
+  - IQ-TREE
+  - MrBayes
+  - molecular evolution
