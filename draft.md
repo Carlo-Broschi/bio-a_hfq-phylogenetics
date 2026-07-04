@@ -9,11 +9,17 @@
 
 ## Title candidates
 
--
+- A rooted, dual-method phylogeny of the bacterial Hfq family: congruence, taxonomy, and the limits of a short protein
+- (alt) Maximum-likelihood and Bayesian phylogeny of bacterial Hfq, rooted with archaeal SmAP
 
 ---
 
 ## Abstract
+
+<!-- 骨子：225 taxa の細菌 Hfq を IQ-TREE3(ML)＋MrBayes(BI) で解析、古細菌 SmAP で有根化。
+強支持枝で ML/BI が 94.5% 一致、外群は両手法で単系統＝頑健に有根化。Hfq 系統は門レベル分類
+(Bacillota/Pseudomonadota) を概ね再現＝垂直伝播。深部は未解決だが、これは手法でなく Hfq の
+短鎖性（254 informative sites）による情報律速であることを構造ガイド対照実験で実証。 -->
 
 ---
 
@@ -21,12 +27,17 @@
 
 ### Background
 
-Hfq は細菌の RNA シャペロンとして機能し、sRNA と mRNA の相互作用を媒介する。
-Sm/Lsm スーパーファミリーに属し、六量体リングを形成する。
+Hfq is a bacterial RNA chaperone that mediates interactions between small regulatory RNAs (sRNAs) and their mRNA targets, and thereby participates in post-transcriptional regulation, mRNA stability and polyadenylation. It belongs to the Sm/Lsm superfamily and adopts the characteristic Sm fold — an N-terminal α-helix over a strongly bent five-stranded antiparallel β-sheet — assembling into a homohexameric ring, in contrast to the heptameric rings of eukaryotic Sm/Lsm and archaeal SmAP proteins. Despite this shared fold, Hfq shares little sequence identity with its archaeal and eukaryotic homologs, making the Hfq family a well-bounded system for phylogenetic analysis within bacteria while retaining a structurally defined outgroup (archaeal SmAP) for rooting.
 
 ### Gap
 
+Existing Hfq phylogenies predate current best-practice inference and the present scale of sequenced bacterial diversity. Hfq is also a short protein (a ~70–110-aa core), which limits the number of informative alignment sites and makes deep-node resolution intrinsically difficult; earlier studies have not systematically characterized this limitation, nor combined maximum-likelihood and Bayesian inference with explicit congruence and convergence diagnostics. Rooting has likewise been problematic: the closest structurally characterized outgroup (archaeal SmAP) is highly divergent in sequence, so a principled, reproducible rooting strategy is needed.
+
 ### Aims
+
+1. To reconstruct a robust, rooted phylogeny of the bacterial Hfq family using current methods (IQ-TREE3 maximum likelihood and MrBayes Bayesian inference), with archaeal SmAP proteins as a structurally motivated outgroup — part of a reciprocal-outgroup design shared with the companion Sm/Lsm study.
+2. To quantify the congruence between maximum-likelihood and Bayesian topologies and to characterize, honestly, the extent and cause of deep-node uncertainty.
+3. To assess whether the resulting Hfq phylogeny recapitulates bacterial taxonomy, as a test of predominantly vertical inheritance.
 
 ---
 
@@ -86,13 +97,17 @@ The bacterial ingroup was dominated by two phyla, Pseudomonadota (114 tips) and 
 
 ## 4. Discussion
 
-- ML と BI が well-supported ノードで高度に一致（94.5%）することは、樹形の頑健性を支持する。不一致が深部低支持枝に限られる点は、短鎖タンパク（Hfq）に固有の深部解像限界として解釈でき、より情報量の多い座位（構造ガイドアライメント等）が必要であることを示す。
-- SmAP 外群による有根化が両手法で成立したことは、Hfq/Sm/Lsm を相互外群とする比較設計（companion Sm/Lsm 研究）の前提を支持する。
-- Hfq クレードが門レベル分類（Bacillota / Pseudomonadota）を概ね再現することは、Hfq が主に垂直伝播してきたことと整合する。門境界をまたぐ少数の tip は水平伝播の候補だが、深部低支持のため断定は避け、構造ガイド・遺伝子/種樹 reconciliation での検証を今後の課題とする。
+The maximum-likelihood and Bayesian analyses agree closely at well-supported nodes — 94.5% of strongly-supported ML branches (UFBoot ≥ 95) are recovered in the Bayesian consensus — indicating that the inferred relationships are robust to inference framework. Disagreement between the two methods is confined to the poorly-supported deep backbone. We interpret this as a data-limited rather than a method-limited outcome: with only 254 informative sites, Hfq simply does not carry enough signal to resolve the deepest splits, and no amount of additional computation removes this ceiling. Consistent with this, a structure-guided alignment — essential in the companion cross-domain Sm/Lsm study — did not improve resolution here (Section 2.5b), because within the bacterial Hfq family the variable regions discarded by structural trimming are themselves homologous and phylogenetically informative. Deeper resolution will instead require more information per taxon, for example concatenation with linked genomic characters or gene-tree/species-tree reconciliation.
+
+Rooting with archaeal SmAP succeeded under both frameworks: the five SmAP sequences form a single bipartition separating them from the bacterial ingroup, so the Hfq family can be consistently oriented. This validates the reciprocal-outgroup design, in which the bacterial Hfq of this study serves as the outgroup for the companion Sm/Lsm analysis and vice versa.
+
+Finally, the Hfq phylogeny broadly recapitulates bacterial phylum-level taxonomy, with Bacillota and Pseudomonadota each forming largely coherent assemblages. This is the pattern expected under predominantly vertical inheritance of Hfq. A minority of tips cross the phylum boundary near poorly-supported deep nodes; these are candidates for horizontal transfer but could equally reflect deep-branch artifact, and we do not over-interpret them given the backbone's limited resolution. Distinguishing these possibilities is left to future work using explicit reconciliation methods.
 
 ---
 
 ## 5. Conclusion
+
+We present a rooted, dual-method phylogeny of the bacterial Hfq family in which maximum-likelihood and Bayesian inferences are strongly congruent at well-supported nodes and consistently rooted by an archaeal SmAP outgroup. The phylogeny broadly tracks bacterial taxonomy, consistent with vertical inheritance, while the deepest relationships remain unresolved — a limitation we attribute, and demonstrate, to the short length of the Hfq protein rather than to the inference method.
 
 ---
 
