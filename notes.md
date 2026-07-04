@@ -461,6 +461,11 @@ R 環境は導入済み・動作確認済み（ggtree 4.2.0・treeio 1.36.1・ap
 
 **③ tip ラベル注釈：** `scripts/analytics/build_tip_labels.py` → `4-results/tip_labels.tsv`（accession→生物名 Genus species、FASTA ヘッダの [Organism] 抽出、RUXX_METTH は特例で Methanothermobacter thermautotrophicus）。全225 tip 命中、202属。concordance 図の tip を生物名（イタリック）に置換、外群 SmAP 5件は太字。クレードは生物学的に妥当（Staphylococcus 群・複数 Bacillus クレード等）にまとまることを確認。
 
+**④ 分類群（門）配色：** `scripts/analytics/build_taxonomy.py`（NCBI Taxonomy efetch を ElementTree で LineageEx パース、属→門/綱）→ `4-results/genus_taxonomy.tsv`。`scripts/viz/plot_hfq_taxonomy.R` → `4-results/hfq_tree_taxonomy.{pdf,png}`。
+- 注意点：属名の**同名異義**（細菌属が動植物属とかぶり真核 taxid を誤取得＝Arthropoda/Chordata 等8件）。esearch を `AND (Bacteria[subtree] OR Archaea[subtree])` で原核限定して解消。
+- tip 内訳：Pseudomonadota 114・Bacillota 92・その他少数・古細菌外群5。
+- **結果：Hfq 系統は門レベル分類を概ね再現**（Bacillota と Pseudomonadota が各々まとまる）。深部での少数混在は HGT or 深部アーティファクト候補（draft.md Results 3.4 に記載、断定は回避）。→ Fig. 2 候補。
+
 ---
 
 ## 配列リスト
