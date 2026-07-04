@@ -88,7 +88,7 @@ The five archaeal SmAP outgroup sequences formed a single bipartition separating
 
 ### 3.4 Hfq clades broadly recapitulate bacterial phylum-level taxonomy
 
-The bacterial ingroup was dominated by two phyla, Pseudomonadota (114 tips) and Bacillota (92 tips), with the remaining tips distributed among minor phyla (Aquificota, Thermodesulfobacteriota) or unresolved genera. Mapping phylum onto the rooted tree showed that these two dominant phyla occupy largely coherent regions of the phylogeny: Bacillota taxa (e.g., *Staphylococcus*, multiple *Bacillus*, *Listeria*, and clostridial genera) form a predominantly monophyletic assemblage, as do Pseudomonadota (Fig. 2). Thus Hfq phylogeny broadly recapitulates bacterial phylum-level taxonomy. A minority of tips were interdigitated across the phylum boundary, particularly near poorly supported deep nodes; these cases are candidates for either horizontal transfer or deep-branch artifact and are not over-interpreted here given the limited resolution of the backbone (Section 3.2).
+The bacterial ingroup was dominated by two phyla, Pseudomonadota (114 tips) and Bacillota (92 tips), with the remaining tips distributed among minor phyla (Aquificota, Thermodesulfobacteriota) or unresolved genera. Mapping phylum onto the rooted tree showed that these two dominant phyla occupy largely coherent regions of the phylogeny: Bacillota taxa (e.g., *Staphylococcus*, multiple *Bacillus*, *Listeria*, and clostridial genera) form a predominantly monophyletic assemblage, as do Pseudomonadota (Fig. 2). Thus Hfq phylogeny broadly recapitulates bacterial phylum-level taxonomy. This is consistent with the earlier finding that Hfq's phyletic distribution follows major bacterial clades and reflects gene loss rather than lateral transfer (Sun, Zhulin & Wartell 2002); the deep-branching Aquificota lineage in our tree likewise retains Hfq, as that survey reported. A minority of tips were interdigitated across the phylum boundary, particularly near poorly supported deep nodes; these cases are candidates for either horizontal transfer or deep-branch artifact and are not over-interpreted here given the limited resolution of the backbone (Section 3.2).
 
 ---
 
@@ -98,7 +98,7 @@ The maximum-likelihood and Bayesian analyses agree closely at well-supported nod
 
 Rooting with archaeal SmAP succeeded under both frameworks: the five SmAP sequences form a single bipartition separating them from the bacterial ingroup, so the Hfq family can be consistently oriented. This validates the reciprocal-outgroup design, in which the bacterial Hfq of this study serves as the outgroup for the companion Sm/Lsm analysis and vice versa.
 
-Finally, the Hfq phylogeny broadly recapitulates bacterial phylum-level taxonomy, with Bacillota and Pseudomonadota each forming largely coherent assemblages. This is the pattern expected under predominantly vertical inheritance of Hfq. A minority of tips cross the phylum boundary near poorly-supported deep nodes; these are candidates for horizontal transfer but could equally reflect deep-branch artifact, and we do not over-interpret them given the backbone's limited resolution. Distinguishing these possibilities is left to future work using explicit reconciliation methods.
+Finally, the Hfq phylogeny broadly recapitulates bacterial phylum-level taxonomy, with Bacillota and Pseudomonadota each forming largely coherent assemblages. This is the pattern expected under predominantly vertical inheritance of Hfq, and it accords with the phyletic-distribution analysis of Sun, Zhulin & Wartell (2002), who found Hfq presence/absence to track major bacterial clades with gene loss — not lateral transfer — as the dominant evolutionary force. A minority of tips cross the phylum boundary near poorly-supported deep nodes; these are candidates for horizontal transfer but could equally reflect deep-branch artifact, and we do not over-interpret them given the backbone's limited resolution. Distinguishing these possibilities is left to future work using explicit reconciliation methods.
 
 ---
 
@@ -116,6 +116,7 @@ We present a rooted, dual-method phylogeny of the bacterial Hfq family in which 
   Kalyaanamoorthy et al. 2017 (ModelFinder); Hoang et al. 2018 (UFBoot2, msx281); Ronquist et al. 2012 (MrBayes, sys029);
   Aberer et al. 2013 (RogueNaRok, sys078); Sukumaran & Holder 2010 (dendropy); Gilchrist et al. 2024 (FoldMason).
 - Domain/background: Sobrero & Valverde 2012 (Hfq core length); Vogel & Luisi (Hfq & sRNA review, 入手済);
+  **Sun, Zhulin & Wartell 2002 (Hfq phyletic distribution, NAR 30:3662, DOI 10.1093/nar/gkf508)**——§3.4/Discussion で gene-loss・門追従・Aquificales 保有の根拠（精読済）;
   **Mura et al. 2013 (Sm/Lsm/Hfq review) は DOI 10.4161/rna.24538**（誤 DOI 注意）; companion Sm/Lsm study (相互外群, 自著 bio-b).
 - 構造アンカー（2.5b の FoldMason 用 PDB、Table S1相当）: 1HK9/1KQ1/1U1S/2QTX/3AHU/3GIB (Hfq),
   1I8F/1I81/1TH7/1LJO/1M5Q/1M8V/1I5L/1I4K/1H64 (SmAP). 原著は bio-b structural_anchors.md 参照。
