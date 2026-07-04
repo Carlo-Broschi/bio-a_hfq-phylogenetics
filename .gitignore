@@ -35,3 +35,6 @@ Thumbs.db
 *.swp
 # MrBayes/editor backups
 *~
+
+# raw PDB structures (regenerable from RCSB)
+3-analysis/structures/

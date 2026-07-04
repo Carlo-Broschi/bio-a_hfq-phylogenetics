@@ -461,6 +461,16 @@ R 環境は導入済み・動作確認済み（ggtree 4.2.0・treeio 1.36.1・ap
 
 **③ tip ラベル注釈：** `scripts/analytics/build_tip_labels.py` → `4-results/tip_labels.tsv`（accession→生物名 Genus species、FASTA ヘッダの [Organism] 抽出、RUXX_METTH は特例で Methanothermobacter thermautotrophicus）。全225 tip 命中、202属。concordance 図の tip を生物名（イタリック）に置換、外群 SmAP 5件は太字。クレードは生物学的に妥当（Staphylococcus 群・複数 Bacillus クレード等）にまとまることを確認。
 
+### 2026-07-04 — 構造ガイド MSA（bio-b と方法論を揃える）
+
+bio-b で構築した FoldMason ワークフローを bio-a にも適用。**bio-a のスコープ（細菌 Hfq ＋ 古細菌 SmAP 外群）に合わせ、真核 Sm（1D3B/3PGW）を除いた16 PDB**（細菌 Hfq: 1HK9/1KQ1/1KQ2/1U1S/2QTX/3AHU/3GIB ＋ 古細菌 SmAP: 1I8F/1I81/1TH7/1LJO/1M5Q/1M8V/1I5L/1I4K/1H64）で seed 構築。
+
+- `foldmason easy-msa` → CD-HIT 0.95 → **構造 seed 12配列×149列**（細菌 Hfq 5＋古細菌 SmAP 7）。
+- `mafft --seed` で 225本を構造ガイド整列 → `hfq_structguided.fasta`（237×278）。
+- 占有率トリム → `hfq_structguided_trim.fasta`（**225×101列**、構造コア73列）。
+
+**重要な注意（bio-b と事情が違う）：** 構造ガイド版は素の版（225×**254**列）より**大幅に短い**。bio-a は同じ細菌 Hfq 内で変異領域も相同＝系統情報を持ちうるため、構造ガイドの絞り込みが**浅い枝の解像度を下げる懸念**がある（bio-b は3ドメインで生配列が並ばず構造が必須だったのと対照的）。→ 理論でなく実測で判断するため IQ-TREE3（PID 64503）で構造ガイド木を作り、素の版と RF・rooting・ML/Bayes 一致で比較する。
+
 **④ 分類群（門）配色：** `scripts/analytics/build_taxonomy.py`（NCBI Taxonomy efetch を ElementTree で LineageEx パース、属→門/綱）→ `4-results/genus_taxonomy.tsv`。`scripts/viz/plot_hfq_taxonomy.R` → `4-results/hfq_tree_taxonomy.{pdf,png}`。
 - 注意点：属名の**同名異義**（細菌属が動植物属とかぶり真核 taxid を誤取得＝Arthropoda/Chordata 等8件）。esearch を `AND (Bacteria[subtree] OR Archaea[subtree])` で原核限定して解消。
 - tip 内訳：Pseudomonadota 114・Bacillota 92・その他少数・古細菌外群5。
