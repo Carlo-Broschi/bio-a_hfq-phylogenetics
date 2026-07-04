@@ -3,7 +3,7 @@
 **Project:** bio-a — Hfq Phylogenetics
 **Author:** Sui Nakai
 **Target journal:** Genome Biology and Evolution / Molecular Biology and Evolution
-**Status:** Pre-draft
+**Status:** Submission preparation (2026-07); science QC-locked, GBE format assembly in `../_gbe_submission/`
 
 ---
 
