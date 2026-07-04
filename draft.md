@@ -1,4 +1,4 @@
-# [Title TBD] — Manuscript Draft
+# A rooted, dual-method phylogeny of the bacterial Hfq family — Manuscript Draft
 
 **Project:** bio-a — Hfq Phylogenetics
 **Author:** Sui Nakai
@@ -16,10 +16,7 @@
 
 ## Abstract
 
-<!-- 骨子：225 taxa の細菌 Hfq を IQ-TREE3(ML)＋MrBayes(BI) で解析、古細菌 SmAP で有根化。
-強支持枝で ML/BI が 94.5% 一致、外群は両手法で単系統＝頑健に有根化。Hfq 系統は門レベル分類
-(Bacillota/Pseudomonadota) を概ね再現＝垂直伝播。深部は未解決だが、これは手法でなく Hfq の
-短鎖性（254 informative sites）による情報律速であることを構造ガイド対照実験で実証。 -->
+Hfq is a bacterial RNA chaperone of the Sm/Lsm superfamily, forming a hexameric ring that mediates small-RNA–mRNA interactions. We reconstruct a rooted phylogeny of the bacterial Hfq family and characterize, quantitatively, both its congruence across inference frameworks and the limits of what a short protein can resolve. From 500 RefSeq Hfq sequences reduced to 225 taxa (220 bacterial Hfq plus five archaeal SmAP outgroup sequences) and 254 aligned sites, we infer maximum-likelihood (IQ-TREE3) and Bayesian (MrBayes) trees. The two agree closely where support is high: 94.5% of strongly-supported maximum-likelihood branches (UFBoot ≥ 95) are recovered in the Bayesian consensus, and the SmAP outgroup forms a single bipartition in both trees, allowing consistent rooting. Disagreement is confined to a poorly-supported deep backbone; a control analysis using a structure-guided alignment did not improve resolution, indicating that the limit is set by the short length of Hfq (254 informative sites) rather than by the inference method. The resulting phylogeny broadly recapitulates bacterial phylum-level taxonomy — Bacillota and Pseudomonadota each forming largely coherent assemblages — consistent with predominantly vertical inheritance. This rooted, dual-method Hfq phylogeny serves as one half of a reciprocal-outgroup design with a companion Sm/Lsm study.
 
 ---
 
@@ -113,7 +110,15 @@ We present a rooted, dual-method phylogeny of the bacterial Hfq family in which 
 
 ## References
 
-<!-- Zotero から出力 -->
+<!-- Zotero から出力。本文で引用済み（整形前チェックリスト）：
+- Method tools: Li & Godzik 2006 (CD-HIT); Katoh & Standley 2013 (MAFFT); Minh et al. 2020 (IQ-TREE3);
+  Kalyaanamoorthy et al. 2017 (ModelFinder); Hoang et al. 2018 (UFBoot); Ronquist et al. 2012 (MrBayes);
+  Aberer et al. 2013 (RogueNaRok); Sukumaran & Holder 2010 (dendropy); Gilchrist et al. 2024 (FoldMason).
+- Domain/background: Sobrero & Valverde 2012 (Hfq core length); Vogel & Luisi (Hfq & sRNA review, 入手済);
+  Mura et al. 2013 (Sm/Lsm/Hfq superfamily review); companion Sm/Lsm study (相互外群, 自著 bio-b).
+- 構造アンカー（2.5b の FoldMason 用 PDB、Table S1相当）: 1HK9/1KQ1/1U1S/2QTX/3AHU/3GIB (Hfq),
+  1I8F/1I81/1TH7/1LJO/1M5Q/1M8V/1I5L/1I4K/1H64 (SmAP). 原著は bio-b structural_anchors.md 参照。
+-->
 
 ---
 
@@ -128,4 +133,21 @@ We present a rooted, dual-method phylogeny of the bacterial Hfq family in which 
 
 | Table | Caption | Status |
 |-------|---------|--------|
-| Table 1 | | |
+| Table 1 | Dataset and analysis summary (taxa, sites, models, support, convergence). | Drafted below |
+
+**Table 1. Dataset and analysis summary.**
+
+| Item | Value |
+|------|-------|
+| Ingroup (bacterial Hfq) | 220 taxa |
+| Outgroup (archaeal SmAP) | 5 taxa (*A. fulgidus*, *M. thermautotrophicus*, *P. aerophilum*, *S. solfataricus*, *N. equitans*) |
+| Total taxa | 225 |
+| Aligned sites | 254 (constant 46 = 18.1%) |
+| ML program / model | IQ-TREE3 v3.1.3 / Q.INSECT+I+G4 (BIC) |
+| ML log-likelihood | −17597.4 |
+| ML support | UFBoot ×1000; 91/221 internal branches ≥95 |
+| Bayesian program / model | MrBayes v3.2 / VT+G4 (fixed) |
+| Bayesian convergence | ASDSF 0.047 @ ~1.06 M gen (PSRF ≈ 1.00) |
+| ML–BI congruence | 94.5% of ML UFBoot≥95 branches recovered in BI consensus |
+| Rooting | SmAP outgroup monophyletic in both trees |
+| Structure-guided control | 101 sites; UFBoot≥95 84/222 (no improvement over 254-site alignment) |
