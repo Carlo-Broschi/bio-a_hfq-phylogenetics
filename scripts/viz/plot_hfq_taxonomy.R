@@ -60,7 +60,6 @@ p <- ggtree(ml, linewidth = 0.3) %<+% tipdf +
   scale_color_manual(values = cols, name = "Phylum", na.translate = FALSE,
                      guide = guide_legend(override.aes = list(size = 4.5))) +
   ggtree::hexpand(0.35) +
-  ggtitle("Hfq phylogeny colored by bacterial phylum (225 taxa; archaea outgroup in bold)") +
   theme_tree2() +
   theme(legend.position = c(0.16, 0.86),
         legend.title = element_text(size = 17, face = "bold"),

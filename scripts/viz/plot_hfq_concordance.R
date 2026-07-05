@@ -105,33 +105,34 @@ tipdf <- data.frame(node = seq_len(n_tip),
                                       labmap[ml$tip.label], ml$tip.label),
                     is_og = ml$tip.label %in% og_tips)
 
-pal <- c("both high" = "firebrick", "ML only" = "orange",
-         "Bayes only" = "steelblue", "both weak" = "grey80")
+# 色覚バリアフリー（Okabe-Ito）
+pal <- c("both high" = "#0072B2", "ML only" = "#E69F00",
+         "Bayes only" = "#CC79A7", "both weak" = "grey75")
 
+# 個々の species ラベルはカラム幅で判読不能 → 外群(SmAP 5件)のみ表示し rooting を可視化。
+# node の support-concordance ドットが本図の message。タイトルはキャプションへ。
 p <- ggtree(ml, linewidth = 0.3) %<+% rbind(
        data.frame(node = nodedf$node, concord = nodedf$concord,
                   organism = NA, is_og = NA),
        data.frame(node = tipdf$node, concord = NA,
                   organism = tipdf$organism, is_og = tipdf$is_og)) +
-  geom_nodepoint(aes(color = concord), size = 1.1, na.rm = TRUE) +
-  scale_color_manual(values = pal, name = "Support concordance\n(UFBoot / PP)",
+  geom_nodepoint(aes(color = concord), size = 1.4, na.rm = TRUE) +
+  scale_color_manual(values = pal, name = "Node support concordance\n(ML UFBoot / Bayesian PP)",
                      na.translate = FALSE,
                      guide = guide_legend(override.aes = list(size = 4.5))) +
-  geom_tiplab(aes(label = organism, fontface = ifelse(is_og, "bold", "italic")),
-              size = 1.3, offset = 0.05, align = FALSE) +
-  ggtree::hexpand(0.35) +
-  ggtitle("Hfq: ML vs Bayesian node-support concordance (225 taxa; SmAP outgroup in bold)") +
+  geom_tiplab(aes(label = ifelse(is_og %in% TRUE, organism, "")),
+              fontface = "bold", size = 2.4, offset = 0.05, color = "grey20") +
+  ggtree::hexpand(0.15) +
   theme_tree2() +
-  theme(legend.position = c(0.16, 0.86),
-        legend.title = element_text(size = 17, face = "bold"),
-        legend.text = element_text(size = 14),
-        legend.key.size = unit(1.3, "lines"),
+  theme(legend.position = c(0.18, 0.88),
+        legend.title = element_text(size = 15, face = "bold"),
+        legend.text = element_text(size = 13),
+        legend.key.size = unit(1.2, "lines"),
         legend.background = element_rect(fill = "white", color = "grey30", linewidth = 0.5),
-        legend.margin = margin(8, 12, 8, 12),
-        plot.title = element_text(size = 10))
+        legend.margin = margin(8, 12, 8, 12))
 
 ggsave(file.path(BASE, "4-results", "hfq_tree_concordance.pdf"), p,
-       width = 10, height = 26, limitsize = FALSE)
+       width = 9, height = 13, limitsize = FALSE)
 ggsave(file.path(BASE, "4-results", "hfq_tree_concordance.png"), p,
-       width = 10, height = 26, dpi = 150, limitsize = FALSE)
+       width = 9, height = 13, dpi = 300, limitsize = FALSE)
 cat("保存: 4-results/hfq_tree_concordance.{pdf,png}\n")
