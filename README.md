@@ -1,9 +1,11 @@
 # Hfq Phylogenetics (bio-a)
 
 **Project ID:** bio-a
-**Status:** Submission preparation (as of 2026-07)
+**Status:** Archived component of the integrated study **bio-c** (2026-07)
 **Target journal:** Genome Biology and Evolution / Molecular Biology and Evolution
 **Timeline:** 2026–2029
+
+> **Note (2026-07):** This analysis has been consolidated into the integrated paper **bio-c** (https://github.com/Carlo-Broschi/bio-c_sm-fold-genome-reduction), which merges the Hfq and Sm/Lsm studies into one manuscript. This repository is retained as the archived component providing the Hfq dual-method phylogeny + Hfq-loss census; it is not submitted independently.
 
 ## Overview
 
