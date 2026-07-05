@@ -49,19 +49,26 @@ pres_sz = [r["size"] for r in rows if r["pres"] and r["size"]]
 abs_sz = [r["size"] for r in rows if not r["pres"] and r["size"]]
 import random
 random.seed(0)
-axB.scatter([r["size"] for r in rows if r["pres"] and r["size"]],
-            [1 + random.uniform(-0.12, 0.12) for r in rows if r["pres"] and r["size"]],
-            s=22, color="#4E79A7", alpha=0.7, label="Hfq present")
-axB.scatter([r["size"] for r in rows if not r["pres"] and r["size"]],
-            [0 + random.uniform(-0.12, 0.12) for r in rows if not r["pres"] and r["size"]],
-            s=22, color="#E15759", alpha=0.7, label="Hfq absent")
+def lineage_loss(r):  # size-independent (mode B) loss: Actinobacteria or Myxococcus
+    return r["lifestyle"] == "actinobacteria" or "Myxococcus" in r["taxon"]
+def jit(v): return v + random.uniform(-0.12, 0.12)
+pres = [r for r in rows if r["pres"] and r["size"]]
+abs_red = [r for r in rows if not r["pres"] and r["size"] and not lineage_loss(r)]
+abs_lin = [r for r in rows if not r["pres"] and r["size"] and lineage_loss(r)]
+axB.scatter([r["size"] for r in pres], [jit(1) for _ in pres],
+            s=24, color="#0072B2", alpha=0.75, label="Hfq present")
+axB.scatter([r["size"] for r in abs_red], [jit(0) for _ in abs_red],
+            s=24, color="#D55E00", alpha=0.75, label="Hfq absent (reduction-associated)")
+axB.scatter([r["size"] for r in abs_lin], [jit(0) for _ in abs_lin],
+            s=52, facecolor="#D55E00", edgecolor="black", linewidth=1.1, alpha=0.9,
+            marker="D", label="Hfq absent (size-independent: Actinobacteria, Myxococcus)")
 axB.set_yticks([0, 1]); axB.set_yticklabels(["absent", "present"])
 axB.set_xlabel("Genome size (Mb)")
-axB.set_title("B  Hfq presence vs genome size", fontsize=10, loc="left")
+axB.set_title("B  Hfq presence vs genome size (n = 71 genomes)", fontsize=10, loc="left")
 axB.set_xscale("log")
-axB.legend(fontsize=8, loc="center right")
+axB.legend(fontsize=7, loc="center right", framealpha=0.92, borderpad=0.6)
 
 plt.tight_layout()
 for ext in ("pdf", "png"):
-    plt.savefig(BASE / "4-results" / f"hfq_census_figure.{ext}", dpi=150, bbox_inches="tight")
+    plt.savefig(BASE / "4-results" / f"hfq_census_figure.{ext}", dpi=300, bbox_inches="tight")
 print("保存: 4-results/hfq_census_figure.{pdf,png}")
