@@ -1,0 +1,73 @@
+taxon	lifestyle	species	accession	assembly_level	genome_size_bp	n_proteins	source
+Pseudomonas aeruginosa	free_living	Pseudomonas aeruginosa PAO1	GCF_000006765.1	Complete Genome	6264404	5572	annotated
+Pseudomonas aeruginosa	free_living	Pseudomonas aeruginosa	GCF_001457615.1	Complete Genome	6316979	5651	annotated
+Escherichia coli	free_living	Escherichia coli str. K-12 substr. MG1655	GCF_000005845.2	Complete Genome	4641652	4300	annotated
+Escherichia coli	free_living	Escherichia coli O157:H7 str. Sakai	GCF_000008865.2	Complete Genome	5594605	5155	annotated
+Vibrio cholerae	free_living	Vibrio cholerae	GCF_008369605.1	Complete Genome	4138412	3605	annotated
+Vibrio cholerae	free_living	Vibrio cholerae	GCF_055389885.1	Complete Genome	4193757	3591	annotated
+Bacillus subtilis	free_living	Bacillus subtilis subsp. subtilis str. 168	GCF_000009045.1	Complete Genome	4215606	4237	annotated
+Bacillus subtilis	free_living	Bacillus subtilis	GCF_029537415.2	Complete Genome	4299842	4348	annotated
+Caulobacter vibrioides	free_living	Caulobacter vibrioides NA1000	GCF_000022005.1	Complete Genome	4042929	3886	annotated
+Caulobacter vibrioides	free_living	Caulobacter vibrioides	GCF_002310295.2	Complete Genome	4123726	3875	annotated
+Sinorhizobium meliloti	free_living	Sinorhizobium meliloti	GCF_037023865.1	Complete Genome	6926935	6194	annotated
+Sinorhizobium meliloti	free_living	Sinorhizobium meliloti	GCF_023197145.2	Complete Genome	6313908	5734	annotated
+Myxococcus xanthus	free_living	Myxococcus xanthus DK 1622	GCF_000012685.1	Complete Genome	9139763	7222	annotated
+Myxococcus xanthus	free_living	Myxococcus xanthus	GCF_006402015.1	Complete Genome	9429999	7607	annotated
+Salmonella enterica	free_living	Salmonella enterica subsp. enterica serovar Typhimurium str. LT2	GCF_000006945.2	Complete Genome	4951383	4554	annotated
+Salmonella enterica	free_living	Salmonella enterica	GCF_016028495.1	Complete Genome	4968720	4582	annotated
+Staphylococcus aureus	facultative_host	Staphylococcus aureus subsp. aureus NCTC 8325	GCF_000013425.1	Complete Genome	2821361	2767	annotated
+Staphylococcus aureus	facultative_host	Staphylococcus aureus	GCF_026167765.1	Complete Genome	2755077	2589	annotated
+Neisseria meningitidis	facultative_host	Neisseria meningitidis	GCF_022869645.1	Complete Genome	2181327	1937	annotated
+Neisseria meningitidis	facultative_host	Neisseria meningitidis	GCF_002073235.2	Complete Genome	2397461	2085	annotated
+Legionella pneumophila	facultative_host	Legionella pneumophila	GCF_001941585.1	Complete Genome	3409143	2974	annotated
+Legionella pneumophila	facultative_host	Legionella pneumophila	GCF_006364635.1	Complete Genome	3409192	2975	annotated
+Yersinia pestis	facultative_host	Yersinia pestis CO92	GCF_000009065.1	Complete Genome	4829855	3913	annotated
+Yersinia pestis	facultative_host	Yersinia pestis	GCF_003798225.1	Complete Genome	4930959	3879	annotated
+Helicobacter pylori	facultative_host	Helicobacter pylori	GCF_025998455.1	Complete Genome	1696601	1478	annotated
+Helicobacter pylori	facultative_host	Helicobacter pylori	GCF_003050665.1	Complete Genome	1680898	1502	annotated
+Campylobacter jejuni	facultative_host	Campylobacter jejuni subsp. jejuni NCTC 11168 = ATCC 700819	GCF_000009085.1	Complete Genome	1641481	1572	annotated
+Campylobacter jejuni	facultative_host	Campylobacter jejuni	GCF_045689445.1	Complete Genome	1768448	0	no_data
+Rickettsia prowazekii	obligate_intracellular	Rickettsia prowazekii str. Chernikova	GCF_000277165.1	Complete Genome	1109804	831	annotated
+Rickettsia prowazekii	obligate_intracellular	Rickettsia prowazekii str. Breinl	GCF_000367405.1	Complete Genome	1109301	817	annotated
+Ehrlichia chaffeensis	obligate_intracellular	Ehrlichia chaffeensis str. Arkansas	GCF_000013145.1	Complete Genome	1176248	911	annotated
+Ehrlichia chaffeensis	obligate_intracellular	Ehrlichia chaffeensis str. Jax	GCF_000632865.1	Complete Genome	1176890	902	annotated
+Anaplasma phagocytophilum	obligate_intracellular	Anaplasma phagocytophilum	GCF_050955495.1	Complete Genome	1517188	1010	annotated
+Anaplasma phagocytophilum	obligate_intracellular	Anaplasma phagocytophilum	GCF_058312735.1	Complete Genome	1481805	988	annotated
+Chlamydia trachomatis	obligate_intracellular	Chlamydia trachomatis D/UW-3/CX	GCF_000008725.1	Complete Genome	1042519	887	annotated
+Chlamydia trachomatis	obligate_intracellular	Chlamydia trachomatis A/HAR-13	GCF_000012125.1	Complete Genome	1051969	888	annotated
+Coxiella burnetii	obligate_intracellular	Coxiella burnetii RSA 493	GCF_000007765.2	Complete Genome	2032807	1833	annotated
+Coxiella burnetii	obligate_intracellular	Coxiella burnetii	GCF_005280755.1	Complete Genome	2006529	2012	annotated
+Francisella tularensis	obligate_intracellular	Francisella tularensis subsp. novicida D9876	GCF_000833355.1	Complete Genome	1870206	1733	annotated
+Francisella tularensis	obligate_intracellular	Francisella tularensis subsp. novicida U112	GCF_000833375.1	Complete Genome	1910592	1764	annotated
+Buchnera aphidicola	obligate_endosymbiont	Buchnera aphidicola str. Sg (Schizaphis graminum)	GCF_000007365.1	Complete Genome	641454	568	annotated
+Buchnera aphidicola	obligate_endosymbiont	Buchnera aphidicola	GCF_900128725.1	Complete Genome	456703	377	annotated
+Wigglesworthia glossinidia	obligate_endosymbiont	Wigglesworthia glossinidia endosymbiont of Glossina morsitans morsitans (Yale colony)	GCF_000247565.1	Complete Genome	719535	635	annotated
+Candidatus Blochmannia	obligate_endosymbiont	Candidatus Blochmanniella pennsylvanica str. BPEN	GCF_000011745.1	Complete Genome	791654	607	annotated
+Candidatus Blochmannia	obligate_endosymbiont	Candidatus Blochmanniella chromaiodes str. 640	GCF_000331065.1	Complete Genome	791219	609	annotated
+Candidatus Carsonella ruddii	obligate_endosymbiont	Candidatus Carsonella ruddii HC isolate Thao2000	GCF_000287275.1	Complete Genome	166163	194	annotated
+Candidatus Carsonella ruddii	obligate_endosymbiont	Candidatus Carsonella ruddii	GCF_013463375.1	Complete Genome	174118	207	annotated
+Candidatus Sulcia muelleri	obligate_endosymbiont	Candidatus Karelsulcia muelleri	GCF_001447915.1	Complete Genome	190657	189	annotated
+Candidatus Sulcia muelleri	obligate_endosymbiont	Candidatus Karelsulcia muelleri	GCF_964264775.1	Complete Genome	284838	259	annotated
+Baumannia cicadellinicola	obligate_endosymbiont	Candidatus Palibaumannia cicadellinicola	GCF_000754265.1	Complete Genome	759425	655	annotated
+Baumannia cicadellinicola	obligate_endosymbiont	Candidatus Palibaumannia cicadellinicola	GCF_001269425.1	Complete Genome	636137	514	annotated
+Mycoplasma genitalium	mollicute_reduced	Mycoplasmoides genitalium	GCF_040556925.1	Complete Genome	580076	503	annotated
+Mycoplasma genitalium	mollicute_reduced	Mycoplasmoides genitalium G37	GCF_000027325.1	Complete Genome	580076	504	annotated
+Mycoplasmoides pneumoniae	mollicute_reduced	Mycoplasmoides pneumoniae	GCF_900660465.1	Complete Genome	823017	680	annotated
+Mycoplasmoides pneumoniae	mollicute_reduced	Mycoplasmoides pneumoniae FH	GCF_001272835.1	Complete Genome	817207	673	annotated
+Mesoplasma florum	mollicute_reduced	Mesoplasma florum L1	GCF_000008305.1	Complete Genome	793224	688	annotated
+Mesoplasma florum	mollicute_reduced	Mesoplasma florum	GCF_002504385.1	Complete Genome	820043	715	annotated
+Borrelia burgdorferi	spirochete_host	Borreliella burgdorferi	GCF_002151505.1	Complete Genome	1341182	1223	annotated
+Borrelia burgdorferi	spirochete_host	Borreliella burgdorferi	GCF_040790805.1	Complete Genome	1216633	1132	annotated
+Treponema pallidum	spirochete_host	Treponema pallidum subsp. pallidum str. Nichols	GCF_000008605.1	Complete Genome	1138011	985	annotated
+Treponema pallidum	spirochete_host	Treponema pallidum subsp. pallidum	GCF_050920505.1	Complete Genome	1141273	972	annotated
+Mycobacterium tuberculosis	actinobacteria	Mycobacterium tuberculosis H37Rv	GCF_000195955.2	Complete Genome	4411532	3906	annotated
+Mycobacterium tuberculosis	actinobacteria	Mycobacterium tuberculosis H37Rv	GCF_000277735.2	Complete Genome	4411709	3924	annotated
+Streptomyces coelicolor	actinobacteria	Streptomyces coelicolor A3(2)	GCF_008931305.1	Complete Genome	8667664	7555	annotated
+Streptomyces coelicolor	actinobacteria	Streptomyces coelicolor A3(2)	GCF_000203835.1	Complete Genome	9054847	7872	annotated
+Corynebacterium glutamicum	actinobacteria	Corynebacterium glutamicum ATCC 13032	GCF_000011325.1	Complete Genome	3309401	2941	annotated
+Corynebacterium glutamicum	actinobacteria	Corynebacterium glutamicum	GCF_027569975.1	Complete Genome	3282349	2906	annotated
+Bifidobacterium longum	actinobacteria	Bifidobacterium longum subsp. longum JCM 1217	GCF_000196555.1	Complete Genome	2385164	1884	annotated
+Bifidobacterium longum	actinobacteria	Bifidobacterium longum	GCF_900637335.1	Complete Genome	2385160	1885	annotated
+Aquifex aeolicus	aquificota_deep	Aquifex aeolicus VF5	GCF_000008625.1	Complete Genome	1590791	1738	annotated
+Hydrogenobacter thermophilus	aquificota_deep	Hydrogenobacter thermophilus TK-6	GCF_000164905.1	Complete Genome	1742932	1904	annotated
+Hydrogenobacter thermophilus	aquificota_deep	Hydrogenobacter thermophilus TK-6	GCF_000010785.1	Complete Genome	1743135	1895	annotated
