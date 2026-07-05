@@ -37,8 +37,8 @@ Chlamydia trachomatis	obligate_intracellular	Chlamydia trachomatis D/UW-3/CX	GCF
 Chlamydia trachomatis	obligate_intracellular	Chlamydia trachomatis A/HAR-13	GCF_000012125.1	Complete Genome	1051969	888	annotated
 Coxiella burnetii	obligate_intracellular	Coxiella burnetii RSA 493	GCF_000007765.2	Complete Genome	2032807	1833	annotated
 Coxiella burnetii	obligate_intracellular	Coxiella burnetii	GCF_005280755.1	Complete Genome	2006529	2012	annotated
-Francisella tularensis	obligate_intracellular	Francisella tularensis subsp. novicida D9876	GCF_000833355.1	Complete Genome	1870206	1733	annotated
-Francisella tularensis	obligate_intracellular	Francisella tularensis subsp. novicida U112	GCF_000833375.1	Complete Genome	1910592	1764	annotated
+Francisella tularensis	facultative_host	Francisella tularensis subsp. novicida D9876	GCF_000833355.1	Complete Genome	1870206	1733	annotated
+Francisella tularensis	facultative_host	Francisella tularensis subsp. novicida U112	GCF_000833375.1	Complete Genome	1910592	1764	annotated
 Buchnera aphidicola	obligate_endosymbiont	Buchnera aphidicola str. Sg (Schizaphis graminum)	GCF_000007365.1	Complete Genome	641454	568	annotated
 Buchnera aphidicola	obligate_endosymbiont	Buchnera aphidicola	GCF_900128725.1	Complete Genome	456703	377	annotated
 Wigglesworthia glossinidia	obligate_endosymbiont	Wigglesworthia glossinidia endosymbiont of Glossina morsitans morsitans (Yale colony)	GCF_000247565.1	Complete Genome	719535	635	annotated

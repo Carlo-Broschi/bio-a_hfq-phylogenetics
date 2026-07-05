@@ -18,7 +18,7 @@ Ehrlichia chaffeensis	obligate_intracellular	lost
 Anaplasma phagocytophilum	obligate_intracellular	lost
 Chlamydia trachomatis	obligate_intracellular	lost
 Coxiella burnetii	obligate_intracellular	variable
-Francisella tularensis	obligate_intracellular	variable
+Francisella tularensis	facultative_host	variable
 Buchnera aphidicola	obligate_endosymbiont	lost
 Wigglesworthia glossinidia	obligate_endosymbiont	lost
 Candidatus Blochmannia	obligate_endosymbiont	lost

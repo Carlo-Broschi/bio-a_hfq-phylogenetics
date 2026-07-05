@@ -11,6 +11,8 @@ Aquifex aeolicus	aquificota_deep	Aquifex aeolicus VF5	GCF_000008625.1	1590791	17
 Hydrogenobacter thermophilus	aquificota_deep	Hydrogenobacter thermophilus TK-6	GCF_000164905.1	1742932	1904	1	1
 Hydrogenobacter thermophilus	aquificota_deep	Hydrogenobacter thermophilus TK-6	GCF_000010785.1	1743135	1895	1	1
 Campylobacter jejuni	facultative_host	Campylobacter jejuni subsp. jejuni NCTC 11168 = ATCC 700819	GCF_000009085.1	1641481	1572	0	0
+Francisella tularensis	facultative_host	Francisella tularensis subsp. novicida D9876	GCF_000833355.1	1870206	1733	1	1
+Francisella tularensis	facultative_host	Francisella tularensis subsp. novicida U112	GCF_000833375.1	1910592	1764	1	1
 Helicobacter pylori	facultative_host	Helicobacter pylori	GCF_025998455.1	1696601	1478	0	0
 Helicobacter pylori	facultative_host	Helicobacter pylori	GCF_003050665.1	1680898	1502	0	0
 Legionella pneumophila	facultative_host	Legionella pneumophila	GCF_001941585.1	3409143	2974	1	1
@@ -62,8 +64,6 @@ Coxiella burnetii	obligate_intracellular	Coxiella burnetii RSA 493	GCF_000007765
 Coxiella burnetii	obligate_intracellular	Coxiella burnetii	GCF_005280755.1	2006529	2012	0	0
 Ehrlichia chaffeensis	obligate_intracellular	Ehrlichia chaffeensis str. Arkansas	GCF_000013145.1	1176248	911	0	0
 Ehrlichia chaffeensis	obligate_intracellular	Ehrlichia chaffeensis str. Jax	GCF_000632865.1	1176890	902	0	0
-Francisella tularensis	obligate_intracellular	Francisella tularensis subsp. novicida D9876	GCF_000833355.1	1870206	1733	1	1
-Francisella tularensis	obligate_intracellular	Francisella tularensis subsp. novicida U112	GCF_000833375.1	1910592	1764	1	1
 Rickettsia prowazekii	obligate_intracellular	Rickettsia prowazekii str. Chernikova	GCF_000277165.1	1109804	831	0	0
 Rickettsia prowazekii	obligate_intracellular	Rickettsia prowazekii str. Breinl	GCF_000367405.1	1109301	817	0	0
 Borrelia burgdorferi	spirochete_host	Borreliella burgdorferi	GCF_002151505.1	1341182	1223	0	0

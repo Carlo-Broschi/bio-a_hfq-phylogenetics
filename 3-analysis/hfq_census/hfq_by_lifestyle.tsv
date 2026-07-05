@@ -1,9 +1,9 @@
 lifestyle	n_genomes	hfq_present	presence_rate	median_genome_Mb
 free_living	16	14	0.875	4.969
-facultative_host	11	8	0.727	2.755
+facultative_host	13	10	0.769	2.397
 spirochete_host	4	0	0.000	1.217
 actinobacteria	8	0	0.000	4.412
-obligate_intracellular	12	2	0.167	1.482
+obligate_intracellular	10	0	0.000	1.177
 mollicute_reduced	6	0	0.000	0.817
 obligate_endosymbiont	11	2	0.182	0.636
 aquificota_deep	3	3	1.000	1.743

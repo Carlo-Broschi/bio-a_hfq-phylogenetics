@@ -55,7 +55,7 @@ justify them to a reviewer.** Borderline calls are flagged ⚠.
 | Anaplasma phagocytophilum | Obligate intracellular; ~1.5 Mb |
 | Chlamydia trachomatis | Obligate intracellular; ~1.0 Mb |
 | Coxiella burnetii | Obligate intracellular (historically); ~2.0 Mb ⚠ can be axenically cultured now |
-| Francisella tularensis | Facultative intracellular ⚠ (not strictly obligate); ~1.9 Mb; **retains Hfq in our data** |
+| Francisella tularensis | **RECLASSIFIED to facultative_host (2026-07-05)**: facultative intracellular (axenically culturable), ~1.9 Mb, retains Hfq — moving it out sharpens obligate_intracellular to 0/10 |
 
 ⚠ *Coxiella and Francisella are borderline (facultative). Francisella retains Hfq, consistent with being less reduced/less obligate. Be ready to justify or reclassify as "facultative_host".*
 
