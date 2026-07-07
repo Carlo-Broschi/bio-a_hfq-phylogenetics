@@ -1,5 +1,8 @@
 # Hfq Phylogenetics (bio-a)
 
+![Python](https://img.shields.io/badge/Python-3.14-blue?logo=python) ![R](https://img.shields.io/badge/R-4.x-276DC3?logo=r) ![IQ-TREE](https://img.shields.io/badge/IQ--TREE3-ML-green) ![MrBayes](https://img.shields.io/badge/MrBayes-Bayesian-orange)
+
+
 **Project ID:** bio-a
 **Status:** Archived component of the integrated study **bio-c** (2026-07)
 **Target journal:** Genome Biology and Evolution / Molecular Biology and Evolution
