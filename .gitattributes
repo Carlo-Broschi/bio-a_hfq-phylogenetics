@@ -1,0 +1,4 @@
+# Prevent NEXUS alignment files from being misidentified as Raku
+*.nex linguist-vendored=true
+*.nex.* linguist-vendored=true
+
