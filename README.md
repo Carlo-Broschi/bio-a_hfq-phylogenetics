@@ -6,10 +6,10 @@
 ![Python](https://img.shields.io/badge/Python-3.14-blue?logo=python) ![R](https://img.shields.io/badge/R-4.x-276DC3?logo=r) ![IQ-TREE](https://img.shields.io/badge/IQ--TREE3-ML-green) ![MrBayes](https://img.shields.io/badge/MrBayes-Bayesian-orange)
 
 
-**Project ID:** bio-a
-**Status:** Archived component of the integrated study **bio-c** (2026-07)
+**Project ID:** bio-a · **Status:** Archived component of the integrated study **bio-c** (2026-07)
 **Target journal:** Genome Biology and Evolution / Molecular Biology and Evolution
 **Timeline:** 2026–2029
+**Author:** Minoru Nakai — Independent Researcher
 
 > **Note (2026-07):** This analysis has been consolidated into the integrated paper **bio-c** (https://github.com/Carlo-Broschi/bio-c_sm-fold-genome-reduction), which merges the Hfq and Sm/Lsm studies into one manuscript. Integrated study archived at Zenodo doi:10.5281/zenodo.21202213. This repository is retained as the archived component providing the Hfq dual-method phylogeny + Hfq-loss census; it is not submitted independently.
 
