@@ -57,3 +57,8 @@ doi:10.5281/zenodo.21197822 (this study) and doi:10.5281/zenodo.21197824 (compan
 
 Minoru Nakai — Independent researcher
 Email: vivaldi.rv484@gmail.com
+
+## License
+
+- **Text & data** (manuscript, figures, derived data): CC BY 4.0 — see `LICENSE`.
+- **Code** (analysis scripts): MIT — see `LICENSE-CODE`.
